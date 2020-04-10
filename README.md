@@ -4,8 +4,8 @@
 ---
 
 ## 效果预览
-![pic](https://imgchr.com/i/G7BaFO)
-![gif](https://imgchr.com/i/G7BdYD)
+![pic](https://s1.ax1x.com/2020/04/11/G7BaFO.png)
+![gif](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)
 
 ---
 
