@@ -1,0 +1,230 @@
+#########################################
+#  _ _____                    __ _
+# (_)___ /    ___ ___  _ __  / _(_) __ _
+# | | |_ \   / __/ _ \| '_ \| |_| |/ _` |
+# | |___) | | (_| (_) | | | |  _| | (_| |
+# |_|____/   \___\___/|_| |_|_| |_|\__, |
+#                                  |___/
+#########################################
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+# Default modkey (meta)
+set $mod Mod4
+
+bindsym XF86Search exec --no-startup-id xmodmap ~/build_tmp/xmdm
+
+#basic keybinding
+bindsym --release $mod+a exec --no-startup-id scrot -s /home/npchitman/Pictures/screenshots/
+
+# backlight control
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && notify-send -u low -t 1500 "Brightness Up $ICON_UP"
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 && notify-send -u low -t 1500 "Brightness Down $ICON_DOWN"
+
+# sound and play control
+bindsym $mod+Mod1+j exec --no-startup-id amixer -D pulse sset Master 5%-; exec --no-startup-id amixer -D pulse sset Master 5%-
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-; exec --no-startup-id amixer -D pulse sset Master 5%-
+bindsym $mod+Mod1+k exec --no-startup-id amixer -D pulse sset Master 5%+; exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+; exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym $mod+Mod1+m exec --no-startup-id amixer sset Master toggle; exec --no-startup-id amixer sset Speaker unmute; exec --no-startup-id amixer Headphone unmute;
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle; exec --no-startup-id amixer sset Speaker unmute; exec --no-startup-id amixer Headphone unmute;
+
+ #play/pause
+bindsym $mod+Shift+p exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+
+ # volume up/down
+bindsym $mod+Shift+n exec --no-startup-id playerctl previous
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym $mod+Shift+m exec --no-startup-id playerctl next
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+
+# random wal
+bindsym $mod+Mod1+w exec --no-startup-id sh ~/.script/rdwal
+
+bindsym $mod+Shift+a exec --no-startup-id xdotool key --delay 1400 End
+bindsym $mod+Shift+i exec --no-startup-id xdotool key --delay 1400 Home
+
+
+bindsym $mod+Shift+w exec --no-startup-id sh ~/.config/rofi/scripts/quicklinks.sh
+bindsym $mod+d exec --no-startup-id sh ~/.config/rofi/scripts/apps.sh
+
+
+# mouse focus
+focus_follows_mouse no
+
+# Hide titlebar
+new_window pixel
+
+# i3-gaps
+gaps inner 10
+gaps outer 10
+gaps top 30
+gaps bottom -5
+
+# Font for window titles.
+font pango: System-ui bold 13
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Start a terminal
+bindsym $mod+Return exec termite
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start rofi
+#bindsym $mod+d exec rofi -show drun -columns 2
+bindsym $mod+shift+d exec sh ~/.config/rofi/launchers/launcher.sh
+
+# Move between windows
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Split in horizontal orientation
+#bindsym $mod+h split h
+
+# Split in vertical orientation
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Toggle sticking
+bindsym $mod+Shift+t sticky toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+
+# Name the workspaces
+set $workspace1 " 1:  "
+set $workspace2 " 2:  "
+set $workspace3 " 3:  "
+set $workspace4 " 4:  "
+set $workspace5 " 5:  "
+set $workspace6 " 6:  "
+set $workspace7 " 7:  "
+set $workspace8 " 8: ♫ "
+set $workspace9 " 9:  "
+set $workspace0 " 10:  "
+
+# Switch to workspace
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
+bindsym $mod+9 workspace $workspace9
+bindsym $mod+0 workspace $workspace0
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace0
+
+# Always open some programs on specified workspace
+for_window [class="^.*"] border pixel 0
+assign [class="chromium"]    $workspace1
+assign [class="qv2ray"]	   	$workspace0
+assign [class="VirtualBox"]	$workspace5
+assign [class="cmus"]		    $workspace8
+assign [class="Spotify"] $workspace8
+assign [class="shadowsocks-qt5"]		$workspace0
+assign [class="TelegramDesktop"]		$workspace9
+assign [class="^discord$"]		$workspace9
+
+# Enable float for some windows
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^Sxiv$"] floating enable
+for_window [class="^Vimiv$"] floating enable
+for_window [class="^Arandr$"] floating enable
+for_window [class="^Steam$" title="^Friends List$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
+for_window [title="Viewnior"] floating enable
+for_window [instance="qq.exe"] floating enable
+for_window [instance="qq.exe"] border none
+for_window [instance="Wine"] floating enable
+for_window [instance="Wine"] border none
+for_window [class="Gpick"] floating enable
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+bindsym $mod+Shift+e exec --no-startup-id sh ~/.config/rofi/scripts/powermenu.sh
+
+# Resize window (you can also use the mouse for that)
+mode "resize"
+{
+  # Resize with the arrow keys
+  bindsym $mod+l resize shrink width 10 px or 10 ppt
+  bindsym $mod+j resize grow height 10 px or 10 ppt
+  bindsym $mod+k resize shrink height 10 px or 10 ppt
+  bindsym $mod+h resize grow width 10 px or 10 ppt
+
+  # Back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#######################
+exec --no-startup-id export GTK_IM_MODULE=fcitx
+exec --no-startup-id export XMODIFIERS=@im=fcitx
+exec --no-startup-id export QT_IM_MODULE=fcitx
+#######################
+
+# Startup programs
+exec --no-startup-id feh --bg-max ~/Pictures/wallpapers/alena-aenami-away-1k.jpg
+exec --no-startup-id qv2ray
+exec --no-startup-id compton
+exec --no-startup-id fcitx -d
+exec --no-startup-id tilda
+exec --no-startup-id repoly
+exec --no-startup-id nm-applet
+exec --no-startup-id syndaemon -t -k -i 2 -d
+exec --no-startup-id blueberry-tray

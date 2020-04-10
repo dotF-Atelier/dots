@@ -1,0 +1,5 @@
+#! /bin/sh
+
+mv $HOME/.config/$1 $HOME/workspace/home_dot/config/
+
+ln -s $HOME/workspace/home_dot/config/$1 $HOME/.config/

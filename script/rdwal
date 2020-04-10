@@ -1,0 +1,6 @@
+#!/bin/bash
+#FILENAME=
+PIC_PATH=$HOME/Pictures/wallpapers
+FILENAME=$(ls ${PIC_PATH} | sort -R | head -n1)
+wal -i $PIC_PATH/$FILENAME -q
+

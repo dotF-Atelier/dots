@@ -1,0 +1,2 @@
+#! /usr/bin/sh
+echo $url | base64 -d
