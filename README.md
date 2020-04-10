@@ -4,7 +4,9 @@
 ---
 
 ## 效果预览
-![gif](https://raw.githubusercontent.com/npchitman/files/master/rofi/images/menus/0.gif)|!
+![pic](https://github.com/npchitman/dotfiles/blob/master/show.png?raw=true)
+![gif](https://github.com/npchitman/dotfiles/blob/master/show.gif?raw=true)
+
 ---
 
 ## 使用方法:
