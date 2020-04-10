@@ -4,8 +4,8 @@
 ---
 
 ## 效果预览
-![pic](https://github.com/npchitman/dotfiles/blob/master/show.png?raw=true)
-![gif](https://github.com/npchitman/dotfiles/blob/master/show.gif?raw=true)
+![pic](https://imgchr.com/i/G7BaFO)
+![gif](https://imgchr.com/i/G7BdYD)
 
 ---
 
