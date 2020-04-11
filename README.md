@@ -1,11 +1,14 @@
 # Dotfile
+高度定制化的[i3](https://github.com/Airblader/i3), 运行在[Arch linux](https://www.archlinux.org/)上,
+美观且实用
 
 ---
 
 ## 介绍
 
-- 配置文件备份
-- 使用的发行版为[Arch linux](https://www.archlinux.org/), 其他的未测试, 理论上也适用
+- 自用dotfiles, 从接触i3开始使用并完善到现在
+- 对纯键盘操作进行优化
+- 其他的发行版未测试, 理论上也适用
 - 具体的系统环境参考图1(Info)
 
 ---
