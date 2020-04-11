@@ -20,7 +20,7 @@ set $mod Mod4
 bindsym XF86Search exec --no-startup-id xmodmap ~/build_tmp/xmdm
 
 #basic keybinding
-bindsym --release $mod+a exec --no-startup-id scrot -s /home/npchitman/Pictures/screenshots/
+bindsym --release $mod+a exec --no-startup-id scrot -s /home/npchitman/Pictures/screenshots/.png
 
 # backlight control
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && notify-send -u low -t 1500 "Brightness Up $ICON_UP"

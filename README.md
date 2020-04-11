@@ -59,6 +59,7 @@ $ sh put.sh
 
 ## 配置文件包含的应用
 ### - config
+
 |应用名|说明|
 |------|----|
 |[compton](https://github.com/tryone144/compton)| 独立合成管理器, 为i3提供`淡入淡出`, `阴影`等效果|
@@ -74,17 +75,20 @@ $ sh put.sh
 ---
 
 ### - emacs
+
 * 基于 [redguardtoo/emacs.d](https://github.com/redguardtoo/emacs.d)
 的配置, 若要使用, 请参考[文档](https://github.com/redguardtoo/emacs.d/blob/master/README.org)
 
 * custom.el: 请参考 [overide default setup](https://github.com/redguardtoo/emacs.d#override-default-setup)
 
 ### - vim
+
 * 使用 [vim-plug](https://github.com/junegunn/vim-plug) 来管理插件(脚本自动安装)
 
 ---
 
 ### - xorg
+
 X系统相关配置, 下面给出相关wiki
 * [Xresources](https://wiki.archlinux.org/index.php/X_resources)
 * [Xinitrc](https://wiki.archlinux.org/index.php/Xinit#xinitrc)
@@ -93,6 +97,7 @@ X系统相关配置, 下面给出相关wiki
 ---
 
 ### - zsh
+
 zsh相关配置, 参考[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 * zprofile
 * zshrc
