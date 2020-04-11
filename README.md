@@ -4,7 +4,7 @@
 
 ---
 
-## 效果预览
+## 效果预览:
 
 |[Info](https://s1.ax1x.com/2020/04/11/G7BaFO.png)|[Preview](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)|
 |-------|----|

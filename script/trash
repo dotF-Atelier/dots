@@ -1,2 +1,0 @@
-#! /bin/sh
-mv $@ /home/npchitman/.local/share/Trash/files
