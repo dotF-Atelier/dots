@@ -23,12 +23,12 @@ $ sh put.sh
 ## 使用方法
 
 ### 快捷键
-全部快捷键在[i3config](https://github.com/npchitman/dotfiles/blob/master/config/i3/config)配置里, 举出一些例子
+* 全部快捷键在[i3config](https://github.com/npchitman/dotfiles/blob/master/config/i3/config)配置里, 举出一些例子
 
 #### 快捷菜单
 
 |按键|说明|
-|--|
+|------|----|
 |Super + d | 快捷启动应用
 |Super + Shift + d | 应用菜单
 |Super + Shift + w | 快捷启动站点
@@ -36,24 +36,23 @@ $ sh put.sh
 
 
 #### 音频控制
-需要[playerctl](https://github.com/altdesktop/playerctl)支持,
+
+* 需要[playerctl](https://github.com/altdesktop/playerctl)支持,
 [spotify](https://www.spotify.com/)下完美使用, 其他自行测试
 
-
-
 |按键|说明|
-|--|
+|------|----|
 |Super + Shift + n/m|播放上一首/下一首曲子|
 |Super + Alt + p|暂停/继续播放|
 |Super + Alt + k/j|音量增加/减少|
 |Super + Alt + m|静音/取消静音|
 
 #### 其他
+
 |按键|说明|
-|--|
+|------|----|
 |Super + Alt + w|随机壁纸与相应配色, 需要[pywal](https://github.com/dylanaraps/pywal)支持
 |Super + a| 快速截图, 需要[scort](https://github.com/dreamer/scrot)支持
-
 
 ---
 
