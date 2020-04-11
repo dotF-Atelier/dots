@@ -1,8 +1,7 @@
 # Dotfile
----
 
 ## 效果预览:
-- 点击图片查看大图, 若图像无法显示请点击表头链接
+- #若图像无法显示请点击表头链接
 
 |[Info](https://s1.ax1x.com/2020/04/11/G7BaFO.png)|[Preview](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)|
 |-------|----|
