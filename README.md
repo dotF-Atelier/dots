@@ -1,15 +1,29 @@
 # Dotfile
-配置文件备份
+
+---
+
+## 介绍
+
+- 配置文件备份
+- 使用的发行版为[Arch linux](https://www.archlinux.org/), 其他的未测试, 理论上也适用
+- 具体的系统环境参考图1(Info)
 
 ---
 
 ## 效果预览
-![pic](https://s1.ax1x.com/2020/04/11/G7BaFO.png)
-![gif](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)
+
+- 点击图片查看大图, 若图像无法显示请点击表头链接
+
+|[Info](https://s1.ax1x.com/2020/04/11/G7BaFO.png)|[Preview](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)|
+|-------|----|
+|![pic](https://s1.ax1x.com/2020/04/11/G7BaFO.png)| ![gif](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)
+
 
 ---
 
 ## 安装方法:
+
+### 执行部署脚本
 ```bash
 $ git clone https://github.com/npchitman/dot_files
 
@@ -17,6 +31,11 @@ $ cd dot_files
 
 $ sh put.sh
 ```
+
+### 安装字体
+
+* [Fantasque](https://github.com/belluzj/fantasque-sans): 非常好看的编程用字体
+* [Font-Awesome](https://fontawesome.com/download): 图标, 可在[这里](https://fontawesome.com/cheatsheet?from=io)查找
 
 ---
 
