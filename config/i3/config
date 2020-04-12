@@ -45,7 +45,7 @@ bindsym $mod+Shift+m exec --no-startup-id playerctl next
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 
 # random wal
-bindsym $mod+Mod1+w exec --no-startup-id sh ~/.script/rdwal
+bindsym $mod+Mod1+w exec --no-startup-id sh ~/.script/rdwal -a
 
 bindsym $mod+Shift+a exec --no-startup-id xdotool key --delay 1400 End
 bindsym $mod+Shift+i exec --no-startup-id xdotool key --delay 1400 Home
