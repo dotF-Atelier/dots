@@ -1,17 +1,11 @@
 # Dotfile
-高度定制化的[i3](https://github.com/Airblader/i3), 运行在[Arch linux](https://www.archlinux.org/)上,
-美观且实用
-
----
 
 ## 效果预览:
+#若图像无法显示请点击表头链接
 
 |[Info](https://s1.ax1x.com/2020/04/11/G7BaFO.png)|[Preview](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)|
 |-------|----|
 |![pic](https://s1.ax1x.com/2020/04/11/G7BaFO.png)| ![gif](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)
-
-- 点击图片查看大图, 若图像无法显示请点击表头链接
-
 
 ---
 
