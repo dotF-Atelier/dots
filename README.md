@@ -86,7 +86,6 @@ $ sh put.sh
 |[termite](https://github.com/thestinger/termite)| 模拟终端
 |[tilda](https://github.com/lanoxx/tilda)| 下拉式模拟终端
 |[vimiv](https://github.com/karlch/vimiv)| 类vim操作的图片浏览工具
-|[nvim](https://neovim.io/)| neovim
 
 ---
 
@@ -99,7 +98,7 @@ $ sh put.sh
 
 ### - nvim
 
-* 使用 [thinkvim](https://github.com/npchitman/ThinkVim) 的配置, 参考[wiki](https://github.com/hardcoreplayers/ThinkVim/wiki)
+* 使用 [thinkvim](https://github.com/npchitman/ThinkVim) 的配置
 * thinkvim.d: 参考[User Custom](https://github.com/hardcoreplayers/ThinkVim/wiki/Quickstart#user-custom)
 
 
