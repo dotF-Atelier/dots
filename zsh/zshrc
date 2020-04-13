@@ -22,6 +22,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export EDITOR; export VISUAL EDITOR=nvim; export EDITOR
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
@@ -150,6 +151,7 @@ alias cdqq='cd ~/.wine/drive_c/Program\ Files/QQ/Users/3398426105/FileRecv/'
 alias sudo='sudo -A '
 alias vifm='vifmrun'
 alias rm='safe-rm'
+alias vim='nvim'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
