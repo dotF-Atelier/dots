@@ -6,14 +6,6 @@
 # |_|____/   \___\___/|_| |_|_| |_|\__, |
 #                                  |___/
 #########################################
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-client.background       #ffffff
 # Default modkey (meta)
 set $mod Mod4
 
@@ -66,9 +58,12 @@ gaps inner 10
 gaps outer 10
 gaps top 30
 gaps bottom -5
+border_radius 0
+title_align center
 
 # Font for window titles.
-font pango: System-ui bold 13
+#font pango: System-ui bold 12
+font pango: Thunderman 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -157,37 +152,37 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # Always open some programs on specified workspace
-for_window [class="^.*"] border pixel 0
-assign [class="chromium"]    $workspace1
-assign [class="qv2ray"]	   	$workspace0
-assign [class="VirtualBox"]	$workspace5
-assign [class="cmus"]		    $workspace8
-assign [class="Spotify"] $workspace8
+assign [class="chromium"]						$workspace1
+assign [class="qv2ray"]							$workspace0
+assign [class="VirtualBox"]					$workspace5
+assign [class="cmus"]								$workspace8
+assign [class="Spotify"]						$workspace8
 assign [class="shadowsocks-qt5"]		$workspace0
 assign [class="TelegramDesktop"]		$workspace9
-assign [class="^discord$"]		$workspace9
+assign [class="^discord$"]					$workspace9
 
 # Enable float for some windows
-for_window [class="^Pavucontrol$"] floating enable
-for_window [class="^Sxiv$"] floating enable
-for_window [class="^Vimiv$"] floating enable
-for_window [class="^Arandr$"] floating enable
-for_window [class="^Steam$" title="^Friends List$"] floating enable
-for_window [class="^Steam$" title="Steam - News"] floating enable
-for_window [class="^Steam$" title=".* - Chat"] floating enable
-for_window [class="^Steam$" title="^Settings$"] floating enable
-for_window [class="^Steam$" title=".* - event started"] floating enable
-for_window [class="^Steam$" title=".* CD key"] floating enable
-for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
-for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
-for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
-for_window [title="^Steam Keyboard$"] floating enable
-for_window [title="Viewnior"] floating enable
-for_window [instance="qq.exe"] floating enable
-for_window [instance="qq.exe"] border none
-for_window [instance="Wine"] floating enable
-for_window [instance="Wine"] border none
-for_window [class="Gpick"] floating enable
+for_window [class=".*"] border 0
+title_align center
+for_window [class="^Pavucontrol$"]	floating enable
+for_window [class="^Sxiv$"]					floating enable
+for_window [class="^Vimiv$"]				floating enable
+for_window [class="^Arandr$"]				floating enable
+for_window [class="^Steam$"					title="^Friends List$"] floating enable
+for_window [class="^Steam$"					title="Steam - News"] floating enable
+for_window [class="^Steam$" 				title=".* - Chat"] floating enable
+for_window [class="^Steam$" 				title="^Settings$"] floating enable
+for_window [class="^Steam$" 				title=".* - event started"] floating enable
+for_window [class="^Steam$" 				title=".* CD key"] floating enable
+for_window [class="^Steam$" 				title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" 				title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" 				title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="Viewnior"]				floating enable
+for_window [instance="qq.exe"]			floating enable
+for_window [instance="qq.exe"]			border none
+for_window [instance="Wine"]				floating enable
+for_window [instance="Wine"]				border none
+for_window [class="Gpick"]					floating enable
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -201,10 +196,10 @@ bindsym $mod+Shift+e exec --no-startup-id sh ~/.config/rofi/scripts/powermenu.sh
 mode "resize"
 {
   # Resize with the arrow keys
-  bindsym $mod+l resize shrink width 10 px or 10 ppt
-  bindsym $mod+j resize grow height 10 px or 10 ppt
-  bindsym $mod+k resize shrink height 10 px or 10 ppt
-  bindsym $mod+h resize grow width 10 px or 10 ppt
+  bindsym $mod+l resize shrink width 5 px or 5 ppt
+  bindsym $mod+j resize grow height 5 px or 5 ppt
+  bindsym $mod+k resize shrink height 5 px or 5 ppt
+  bindsym $mod+h resize grow width 5 px or 5 ppt
 
   # Back to normal: Enter or Escape
   bindsym Return mode "default"
