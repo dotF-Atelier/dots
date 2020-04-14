@@ -17,7 +17,7 @@ imap <c-g> <Esc>
 nmap <Localleader>cc gcc
 nmap <Localleader>cu gcc
  " 快速移动
-nmap <Localleader><Localleader>k gsk
-nmap <Localleader><Localleader>j gsj
+nmap <LocalLeader><LocalLeader>k gsk
+nmap <LocalLeader><LocalLeader>j gsj
  " 退出vim
 nnoremap <Localleader>q         :q<cr>
