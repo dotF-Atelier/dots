@@ -96,11 +96,23 @@ $ sh put.sh
 
 * custom.el: 请参考 [overide default setup](https://github.com/redguardtoo/emacs.d#override-default-setup)
 
+---
+
 ### - nvim
 
 * 使用 [thinkvim](https://github.com/npchitman/ThinkVim) 的配置
 * thinkvim.d: 参考[User Custom](https://github.com/hardcoreplayers/ThinkVim/wiki/Quickstart#user-custom)
 
+#### 快捷键绑定
+下面是个人自定义快捷键, 关于 [thinkvim](https://github.com/npchitman/ThinkVim) 默认的快捷键参考 [leaderkey.vim](https://github.com/npchitman/ThinkVim/blob/master/keybinds/leaderkey.vim) 和 [motion.vim](https://github.com/npchitman/ThinkVim/blob/master/keybinds/motion.vim)
+
+|快捷键|说明|
+|---|---|
+|H/L|移动到改行句首/尾
+|Ctrl g|映射为Esc键
+|;cc/cu|注释/取消注释
+|;;k/j |向上/下快速跳转光标
+|;q    |退出vim
 
 ---
 
