@@ -16,8 +16,12 @@ imap <c-g> <Esc>
  " 注释
 nmap <Localleader>cc gcc
 nmap <Localleader>cu gcc
+xmap <Localleader>cc gcc
+xmap <Localleader>cu gcc
  " 快速移动
 nmap <LocalLeader><LocalLeader>k gsk
 nmap <LocalLeader><LocalLeader>j gsj
  " 退出vim
 nnoremap <Localleader>q         :q<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""

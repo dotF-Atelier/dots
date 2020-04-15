@@ -1,5 +1,5 @@
 xrdb ~/.Xresources &
-feh --bg-fill /home/npchitman/Pictures/wallpapers/alena-aenami-away-1k.jpg
+feh --bg-fill /home/npchitman/Pictures/wallpapers/alena/alena-aenami-away-1k.jpg
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx

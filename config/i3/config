@@ -182,6 +182,8 @@ for_window [instance="qq.exe"]			floating enable
 for_window [instance="qq.exe"]			border none
 for_window [instance="Wine"]				floating enable
 for_window [instance="Wine"]				border none
+for_window [instance="TIM.exe"]				floating enable
+for_window [instance="TIM.exe"]				border none
 for_window [class="Gpick"]					floating enable
 
 # Reload the configuration file
