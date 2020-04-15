@@ -1,5 +1,5 @@
 # Dotfile
-[博客地址](https://npchitman.github.io/Linux/Linux-Desktop-Customize/)
+[博客地址](https://yiji-chen.site/Linux/Linux-Customization/)
 
 ## 效果预览:
 *若图像无法显示请点击表头链接*
