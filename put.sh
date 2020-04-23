@@ -66,5 +66,3 @@ do
     ln -s $XORG/$file $HOME/$newfile
 done
 ##### XORG #####
-
-

@@ -11,8 +11,12 @@
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 (global-hl-line-mode t)
 (show-paren-mode 1)
-(fcitx-evil-turn-on)
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
+(ibus-mode t)
+;; (fcitx-evil-turn-on)
 (cnfonts-enable)
+
 (setq cnfonts-use-face-font-rescale t)
 (add-hook '-mode-hook #'rainbow-delimiters-mode)
 ;; ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

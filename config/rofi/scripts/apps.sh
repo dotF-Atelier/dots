@@ -19,7 +19,7 @@ case $chosen in
         evince &
         ;;
     $files)
-        pcmanfm &
+        thunar &
         ;;
     $editor)
         emacsclient -n -c

@@ -1,4 +1,4 @@
-#########################################
+########################################
 #  _ _____                    __ _
 # (_)___ /    ___ ___  _ __  / _(_) __ _
 # | | |_ \   / __/ _ \| '_ \| |_| |/ _` |
@@ -62,8 +62,8 @@ border_radius 0
 title_align center
 
 # Font for window titles.
-#font pango: System-ui bold 12
-font pango: Thunderman 11
+font pango: System-ui bold 12
+# font pango: Thunderman 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -164,10 +164,15 @@ assign [class="^discord$"]					$workspace9
 # Enable float for some windows
 for_window [class=".*"] border 0
 title_align center
+
+# for_window [class="^Tilda$" instance="dropdown"] floating enable
 for_window [class="^Pavucontrol$"]	floating enable
 for_window [class="^Sxiv$"]					floating enable
 for_window [class="^Vimiv$"]				floating enable
 for_window [class="^Arandr$"]				floating enable
+for_window [class="^Code$"]					floating enable
+for_window [class="^Unity$"]				floating enable
+for_window [class="^Steam$"					title="^Steam$"] floating enable
 for_window [class="^Steam$"					title="^Friends List$"] floating enable
 for_window [class="^Steam$"					title="Steam - News"] floating enable
 for_window [class="^Steam$" 				title=".* - Chat"] floating enable
@@ -216,12 +221,11 @@ exec --no-startup-id export QT_IM_MODULE=fcitx
 #######################
 
 # Startup programs
-exec --no-startup-id feh --bg-max ~/Pictures/wallpapers/alena-aenami-away-1k.jpg
 exec --no-startup-id qv2ray
 exec --no-startup-id compton
-exec --no-startup-id fcitx -d
+# exec --no-startup-id fcitx -d
 exec --no-startup-id tilda
-exec --no-startup-id repoly
 exec --no-startup-id nm-applet
 exec --no-startup-id syndaemon -t -k -i 2 -d
 exec --no-startup-id blueberry-tray
+

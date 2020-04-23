@@ -152,6 +152,7 @@ alias sudo='sudo -A '
 alias vifm='vifmrun'
 alias rm='safe-rm'
 alias vim='nvim'
+alias ecli='emacsclient -n -c'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

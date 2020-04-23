@@ -30,6 +30,7 @@ xterm*utf8:               2
 xterm*geometry:           WINDOWGEOMETRY
 xterm*visualBell:         off
 xterm*highlightSelection: true
+! Emacs*useXIM: false
 
 ! URxvt
 URxvt.modifier: mod1

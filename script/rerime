@@ -1,0 +1,9 @@
+#!/bin/bash
+killall fcitx
+defPath=$HOME/.config/fcitx/rime/build/default.yaml
+if [ -d $defPath ]
+then
+	rm $defPath && fcitx-remote -r
+else
+	fcitx-remote -r
+fi

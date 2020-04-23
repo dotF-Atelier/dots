@@ -1,5 +1,5 @@
 * {
-    background-color:      #111116;
+    background-color:      #303030;
     text-color:           #D8DEE9;
     font:            "System-UI bold 20";
 }
@@ -9,7 +9,8 @@
     width:      380px;
 
     /* Change this value according to your screen height */
-    y-offset: -10%;
+    y-offset: -75%;
+		x-offset: -25%;
 
     /* This padding is given just for aesthetic purposes */
     padding:    20px;
