@@ -11,8 +11,9 @@ while getopts :aof: opts; do
     esac
 done
 
+picName=$(ls ${picPath} | sort -R | head -n1)
+PIC=$picPath/$picName
 
-PIC=$picPath/$(ls ${picPath} | sort -R | head -n1)
-echo $PIC
+notify-send "change wallpapers: $picName"
 
 wal -i $PIC
