@@ -9,7 +9,8 @@ iab reutrn return
 nmap L $
 nmap H ^
 nmap K <Nop>
-imap <c-g> <Esc>
+map <c-g> <Esc>
+cmap <c-g> <Esc>
 
 
 " <Localleader>为分号(;)
@@ -23,8 +24,8 @@ nmap <LocalLeader><LocalLeader>k gsk
 nmap <LocalLeader><LocalLeader>j gsj
  " 退出vim
 nnoremap <Localleader>q         :q<cr>
- " 启动ibus自动切换
-nmap <Localleader>it :IMSToggle<cr>
+ " 清除空字符串
+nnoremap <Localleader><space>   :WhitespaceErase<cr>
 
 "##### auto fcitx  ###########
 let g:input_toggle = 1
