@@ -11,7 +11,12 @@ nmap H ^
 nmap K <Nop>
 map <c-g> <Esc>
 cmap <c-g> <Esc>
-
+imap <c-g> <Esc>
+vmap <c-g> <Esc>
+imap <A-h> <Esc>
+imap <A-j> <Esc>
+imap <A-k> <Esc>
+imap <A-l> <Esc>
 
 " <Localleader>为分号(;)
  " 注释
