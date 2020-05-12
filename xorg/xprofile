@@ -1,8 +1,7 @@
-repoly
-rdwal -a
-compton &> /dev/null &
 xrdb ~/.Xresources &
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
-fcitx &
+repoly
+rdwal -a &
+
