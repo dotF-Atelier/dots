@@ -148,11 +148,14 @@ alias cdpr='cd ~/workspace/proj/'
 alias pq="proxychains -q"
 alias adbs='adb kill-server; sudo adb -d shell sh /data/data/me.piebridge.brevent/brevent.sh'
 alias cdqq='cd ~/.wine/drive_c/Program\ Files/QQ/Users/3398426105/FileRecv/'
+alias cdtg='cd /home/npchitman/Downloads/Telegram\ Desktop'
 alias sudo='sudo -A '
 alias vifm='vifmrun'
 alias rm='safe-rm'
 alias vim='nvim'
 alias ecli='emacsclient -n -c'
+
+export TESSDATA_PREFIX="/usr/share/tessdata"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
