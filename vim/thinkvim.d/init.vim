@@ -13,10 +13,13 @@ map <c-g> <Esc>
 cmap <c-g> <Esc>
 imap <c-g> <Esc>
 vmap <c-g> <Esc>
-imap <A-h> <Esc>
-imap <A-j> <Esc>
-imap <A-k> <Esc>
-imap <A-l> <Esc>
+imap <A-h> <Esc><A-h>
+imap <A-j> <Esc><A-j>
+imap <A-k> <Esc><A-k>
+imap <A-l> <Esc><A-l>
+imap <A-O> <Esc><A-O>
+imap <A-o> <Esc><A-o>
+imap <A-A> <Esc><A-A>
 
 " <Localleader>为分号(;)
  " 注释
