@@ -1,0 +1,19 @@
+#!/bin/bash
+# 获得窗口信息
+info=$(xprop)
+
+# 获得窗口NAME
+info_name=$(echo -e "$info" | grep "_NET_WM_NAME(UTF8_STRING)" | sed 's/_NET_WM_NAME(UTF8_STRING) = /NAME:    /g')
+
+# 获得窗口CLASS
+info_class=$(echo -e "$info" | grep "WM_CLASS(STRING)" | sed 's/WM_CLASS(STRING) = /CLASS:   /g' )
+
+# 获得窗口PID
+info_pid=$(echo -e "$info" | grep "PID" | sed 's/_NET_WM_PID(CARDINAL) = /PID:    /g')
+
+# 控制台输出信息
+echo -e "${info_name}\n${info_class}\n${info_pid}"
+
+# 桌面推送消息
+notify-send "$info_name" "$info_class
+$info_pid" -t 0
