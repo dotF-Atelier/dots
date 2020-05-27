@@ -1,7 +1,7 @@
 #!/bin/sh
 lock() {
-    betterlockscreen --lock;
-    #i3lock
+    # betterlockscreen --lock;
+    i3lock
 }
 
 case "$1" in

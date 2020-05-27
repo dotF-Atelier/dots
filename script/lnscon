@@ -1,3 +1,0 @@
-#! /bin/sh
-
-ln -s $HOME/workspace/home_dot/config/$1 $HOME/.config/

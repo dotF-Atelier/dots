@@ -1,2 +1,0 @@
-#!/bin/bash
-xwinwrap -ov -ni -fs -- mpv -wid WID --keepaspect=no --loop $1
