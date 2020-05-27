@@ -32,8 +32,6 @@ export ZSH="/home/npchitman/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="frontcube"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -50,7 +48,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -68,10 +66,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -117,22 +115,17 @@ bindkey '\eK' end-of-line
 bindkey -s '\eo' 'cd ..\n'
 bindkey -s '\e;' 'll\n'
 
-bindkey '\e[1;3D' backward-word
-bindkey '\e[1;3C' forward-word
-bindkey '\e[1;3A' beginning-of-line
-bindkey '\e[1;3B' end-of-line
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='nvim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -144,18 +137,17 @@ bindkey '\e[1;3B' end-of-line
 #
 # Example aliases
 alias npm="cnpm"
-alias cdpr='cd ~/workspace/proj/'
 alias pq="proxychains -q"
-alias adbs='adb kill-server; sudo adb -d shell sh /data/data/me.piebridge.brevent/brevent.sh'
-alias cdqq='cd ~/.wine/drive_c/Program\ Files/QQ/Users/3398426105/FileRecv/'
-alias cdtg='cd /home/npchitman/Downloads/Telegram\ Desktop'
 alias sudo='sudo -A '
 alias vifm='vifmrun'
 alias rm='safe-rm'
 alias vim='nvim'
 alias ecli='emacsclient -n -c'
-
-export TESSDATA_PREFIX="/usr/share/tessdata"
+alias adbs='adb kill-server; sudo adb -d shell sh /data/data/me.piebridge.brevent/brevent.sh'
+alias cdpr='cd ~/workspace/proj/'
+alias cdqq='cd ~/.wine/drive_c/Program\ Files/QQ/Users/3398426105/FileRecv/'
+alias cdtg='cd /home/npchitman/Downloads/Telegram\ Desktop'
+alias cdrs='cd /home/npchitman/workspace/proj/ras/'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
