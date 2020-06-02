@@ -2,7 +2,7 @@
 [博客地址](https://yiji-chen.site/Linux/Linux-Customization/)
 
 ## 效果预览:
-*若图像无法显示请点击表头链接*
+*若图像无法显示请点击[链接](https://yiji-chen.site/Linux/Linux-Customization/)*
 
 |[Info](https://s1.ax1x.com/2020/04/11/G7BaFO.png)|[Preview](https://s1.ax1x.com/2020/04/11/G7BdYD.gif)|
 |-------|----|
