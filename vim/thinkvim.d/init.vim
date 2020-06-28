@@ -1,3 +1,7 @@
+" 基本设置
+set swapfile
+set dir=~/.vimtmp
+
 " 自动纠正手快容易打错的词
 iab Include include
 iab INclude include
@@ -34,5 +38,3 @@ nmap <LocalLeader><LocalLeader>j gsj
 nnoremap <Localleader>q         :q<cr>
  " 清除空字符串
 nnoremap <Localleader><space>   :WhitespaceErase<cr>
-
-

@@ -14,6 +14,7 @@ bindsym XF86Search exec --no-startup-id xmodmap ~/build_tmp/xmdm
 #basic keybinding
 bindsym --release $mod+a exec --no-startup-id scrot -s /home/npchitman/Pictures/screenshots/.png
 bindsym $mod+Mod1+0 exec --no-startup-id xinput-toggle -r 'Wacom HID 4833 Finger'
+bindsym Control+Mod1+Tab exec --no-startup-id xprget
 
 # backlight control
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 && notify-send -u low -t 1500 "Brightness Up $ICON_UP"
@@ -169,6 +170,7 @@ title_align center
 
 # for_window [class="^Tilda$" instance="dropdown"] floating enable
 for_window [class="^Pavucontrol$"]	floating enable
+for_window [class="^SimpleScreenRecorder$"]	floating enable
 for_window [class="^scrcpy$"]	floating enable
 for_window [class="^Gedit$"]	floating enable
 for_window [class="^feh$"]	floating enable
@@ -238,5 +240,5 @@ exec --no-startup-id compton
 exec --no-startup-id tilda
 exec --no-startup-id nm-applet
 exec --no-startup-id syndaemon -t -k -i 2 -d
-exec --no-startup-id blueberry-tray
+exec --no-startup-id blueman-adapters
 exec --no-startup-id fcitx -r &

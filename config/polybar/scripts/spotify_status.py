@@ -118,6 +118,6 @@ try:
 
 except Exception as e:
     if isinstance(e, dbus.exceptions.DBusException):
-        print('UNKNOWN')
+        print('WaiTinG')
     else:
         print(e)

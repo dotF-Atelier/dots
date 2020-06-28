@@ -133,10 +133,10 @@
 
     # Padding between text and separator.
     # padding = 8
-    padding = 8
+    padding = 18
 
     # Horizontal padding.
-    horizontal_padding = 10
+    horizontal_padding = 20
 
     # Define a color for the separator.
     # possible values are:
@@ -191,18 +191,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "0F1718"
-    foreground = "#A1C6BD"
+    background = "#0F1718"
+    foreground = "#ffffff"
     timeout = 5
 
 [urgency_normal]
-    background = "0F1718"
-    foreground = "#A1C6BD"
+    background = "#0F1718"
+    foreground = "#ffffff"
     timeout = 5
 
 [urgency_critical]
-    background = "0F1718"
-    foreground = "#A1C6BD"
+    background = "#0F1718"
+    foreground = "#ffffff"
     timeout = 0
 
 [Spotify]

@@ -33,7 +33,7 @@ case $chosen in
         mpc -q pause
         amixer set Master mute
         xinput disable 'Wacom HID 4833 Finger'
-        i3lock
+				i3lock
         systemctl suspend
         ;;
     $logout)
