@@ -1,7 +1,0 @@
-xrdb ~/.Xresources &
-export GTK_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export QT_IM_MODULE=fcitx
-repoly
-wal -i $HOME/Pictures/wallpapers/alena/alena-aenami-away-1k.jpg
-

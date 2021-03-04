@@ -1,5 +1,0 @@
-#!/bin/bash
-pkill compton;
-compton -b --benchmark 1000000;
-simplescreenrecorder --logfile;
-recomp;

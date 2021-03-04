@@ -1,0 +1,37 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.zshrc
+!.myprofile/
+!.myprofile/**
+
+!.config/
+!.config/nvim/
+!.config/nvim/**
+!.config/bspwm/
+!.config/bspwm/**
+!.config/sxhkd/
+!.config/sxhkd/**
+!.config/polybar/
+!.config/polybar/**
+!.config/gtk-2.0/
+!.config/gtk-2.0/**
+!.config/gtk-3.0/
+!.config/gtk-3.0/**
+!.config/ranger/
+!.config/ranger/**
+!.config/spicetify/
+!.config/spicetify/**
+.config/spicetify/Backup/
+!.config/tilda/
+!.config/tilda/**
+!.config/rofi/
+!.config/rofi/**
+!.config/sakura/
+!.config/sakura/**
+!.config/dunst/
+!.config/dunst/**
+
+# etc...
