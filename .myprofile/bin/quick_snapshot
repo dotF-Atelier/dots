@@ -1,14 +1,10 @@
 #!/bin/bash
 if  [[ $1 = "-s" ]]; then
-    scrot -s '/tmp/%F_%T_$wx$h.png' -e ' \
+    sleep 1 && scrot -s '/tmp/%F_%T_$wx$h.png' -e ' \
     xclip -selection clipboard -target image/png -i $f' && \
     notify-send "select area"
 else
-    scrot -s '/tmp/%F_%T_$wx$h.png' -e ' \
-    xclip -selection clipboard -target image/png -i $f' && \
-    notify-send "select area"
-
-    #scrot "$HOME/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png" && \
-    #notify-send "quick_snapshot"
+    scrot "$HOME/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png" && \
+    notify-send "quick_snapshot"
 fi
 

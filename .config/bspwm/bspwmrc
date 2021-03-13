@@ -15,10 +15,12 @@ bspc config borderless_monocle      true
 bspc config gapless_monocle         false
 bspc config single_monocle          true
 
-bspc rule -a Nightly    desktop='^2' follow=on
-bspc rule -a mpv        desktop='^5' state=fullscreen follow=on
-bspc rule -a feh        state=fullscreen follow=on
-bspc rule -a Tilda      state=floating floating=on focus=on sticky=on
+bspc rule -a Google-chrome  desktop='^2' follow=on
+bspc rule -a discord        desktop='^4'
+bspc rule -a mpv            desktop='^5' state=fullscreen follow=on
+bspc rule -a feh            state=fullscreen follow=on
+bspc rule -a spotify        desktop='^8' follow=on
+bspc rule -a Tilda          state=floating floating=on focus=on sticky=on
 
 bspc monitor HDMI-0 -d TERM WEB CODE COMMUNI FILES READ EXTRA MEDIA
 
