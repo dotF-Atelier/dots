@@ -56,7 +56,7 @@ XF86AudioMute
 
 # screenshot keybindings
 ctrl + alt + a
-    quick_snapshot
+    quick_snapshot -s
 
 # make sxhkd reload its configuration files:
 super + Escape
