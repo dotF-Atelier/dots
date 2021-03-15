@@ -22,7 +22,8 @@ bspc rule -a feh            state=fullscreen follow=on
 bspc rule -a spotify        desktop='^8' follow=on
 bspc rule -a Tilda          state=floating floating=on focus=on sticky=on
 
-bspc monitor HDMI-0 -d TERM WEB CODE COMMUNI FILES READ EXTRA MEDIA
+bspc monitor DP-0 -d TERM WEB CODE COMMUNI FILES
+bspc monitor HDMI-0 -d READ EXTRA MEDIA
 
 repoly
 wmname LG3D
