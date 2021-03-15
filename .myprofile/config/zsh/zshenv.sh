@@ -1,4 +1,7 @@
-MYPATH="$HOME/.myprofile/bin:$HOME/.local/bin"
+MYPATH="$HOME/.myprofile/bin: \
+        $HOME/.local/bin: \
+        $HOME/.emacs.d/bin"
+
 export FONTCONFIG_PATH="/etc/fonts"
 export EDITOR="nvim"
 export PATH="$PATH:$MYPATH"
@@ -8,13 +11,13 @@ export READER="zathura"
 
 if command -v urxvt &> /dev/null
 then
-        export TERMINAL="sakura"
+    export TERMINAL="sakura"
 elif command -v st &> /dev/null
 then
-        export TERMINAL="st"
+    export TERMINAL="st"
 elif command -v xterm &> /dev/null
 then
-        export TERMINAL="xterm"
+    export TERMINAL="xterm"
 fi
 
 # 暂时使用

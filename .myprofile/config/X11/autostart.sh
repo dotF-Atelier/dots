@@ -6,3 +6,4 @@ dunst&
 floating_noborder &
 picom &
 fcitx &
+nitrogen --restore &

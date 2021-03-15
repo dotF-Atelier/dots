@@ -8,6 +8,8 @@
 !.myprofile/**
 
 !.config/
+!.config/doom/
+!.config/doom/**
 !.config/nvim/
 !.config/nvim/**
 !.config/bspwm/
