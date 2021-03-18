@@ -15,8 +15,8 @@ super + shift + d
     run_dmenu
 
 # lockscreen
-alt + shift + l
-	slock
+#alt + shift + l
+	#slock
 
 # programs
 # variables in .bash_profile
@@ -55,8 +55,11 @@ XF86AudioMute
     pactl set-sink-mute 0 toggle
 
 # screenshot keybindings
-ctrl + alt + a
-    quick_snapshot -s
+Print
+    scrot "$HOME/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png" && \
+	notify-send "Screenshot captured"
+ctrl + Print
+    scrot -C
 
 # make sxhkd reload its configuration files:
 super + Escape
