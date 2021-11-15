@@ -1,0 +1,2 @@
+#!/bin/bash
+discord --no-sandbox --proxy-server="socks5://127.0.0.1:7891" &
