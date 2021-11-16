@@ -27,8 +27,8 @@ XF86AudioMute
 
 # screenshot keybindings
 ctrl + alt + a
-    # flameshot gui
-    snapshot
+    flameshot gui
+    # snapshot
 
 # make sxhkd reload its configuration files:
 super + Escape
