@@ -40,6 +40,10 @@
 .config/spacefm/
 .config/tint2/
 .config/wget/
+.config/balena-etcher-electron/
+.config/libfm/
+.config/pcmanfm/
+.moc/
 .dbus/
 .emacs.d/
 .fehbg
@@ -75,3 +79,4 @@ Downloads/
 Picture/
 build_tmp/
 workspace/
+
