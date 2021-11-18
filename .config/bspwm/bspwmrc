@@ -29,8 +29,8 @@ bspc rule -a feh            state=floating follow=on
 bspc rule -a Tilda          state=floating floating=on focus=on sticky=on
 bspc rule -a Demo          state=floating floating=on focus=on sticky=on
 
-bspc monitor DP-0 -d TERM WEB CODE FILE
-bspc monitor HDMI-0 -d TERM WEB CODE FILE
+bspc monitor DisplayPort-0 -d TERM WEB CODE FILE
+bspc monitor HDMI-A-0 -d TERM WEB CODE FILE
 
 # repoly
 wmname LG3D
