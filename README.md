@@ -11,6 +11,4 @@
 
 ## 3.0 Preview
 
-|[screenshots 1](https://github.com/npchitman/dotfiles/tree/3.0/.myprofile/screenshots/1.png)|[screenshots 2](https://github.com/npchitman/dotfiles/tree/3.0/.myprofile/screenshots/2.png)|
-|-------|----|---|
-|![pic](https://github.com/npchitman/dotfiles/tree/3.0/.myprofile/screenshots/1.png)| ![pic](https://github.com/npchitman/dotfiles/tree/3.0/.myprofile/screenshots/2.png)|
+![screenshots 1](https://github.com/npchitman/dotfiles/blob/3.0/.myprofile/screenshots/1.png?raw=true)
