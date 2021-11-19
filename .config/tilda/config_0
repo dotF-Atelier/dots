@@ -1,6 +1,6 @@
 tilda_config_version="1.5.2"
 command=""
-font="Fantasque Sans Mono 13"
+font="FantasqueSansMono Nerd Font 13"
 key="<Alt>q"
 addtab_key="<Shift><Control>t"
 fullscreen_key="F11"

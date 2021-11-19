@@ -19,4 +19,5 @@
  *
  */
 
-@import "../themes/colorschemes/arc.rasi"
+/*@import "../themes/colorschemes/arc.rasi"*/
+@import "~/.cache/wal/colors-rofi-dark"

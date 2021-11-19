@@ -79,4 +79,7 @@ Downloads/
 Picture/
 build_tmp/
 workspace/
-
+.config/QtProject.conf
+.config/cmus/
+.minecraft/
+.thunderbird/
