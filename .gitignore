@@ -80,6 +80,9 @@ Picture/
 build_tmp/
 workspace/
 .config/QtProject.conf
+.config/ncmpcpp/
+.ssr/
+.thumbnails/
 .config/cmus/
 .minecraft/
 .thunderbird/
