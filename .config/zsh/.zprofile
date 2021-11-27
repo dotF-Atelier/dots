@@ -9,9 +9,12 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+## profile
+export MYPROFILE="$HOME/.myprofile"
+
 ## path
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.myprofile/bin:$PATH"
+export PATH="$MYPROFILE/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 ## zsh 
