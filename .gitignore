@@ -86,3 +86,12 @@ workspace/
 .config/cmus/
 .minecraft/
 .thunderbird/
+.conan/
+.config/kritadisplayrc
+.config/kritarc
+.ebcache/
+.ebrc
+.links/
+Desktop/
+.config/mypaint/
+

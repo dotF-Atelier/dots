@@ -29,8 +29,8 @@ export MYXINITRC="$MYXPATH/xinitrc"
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
-ps ca | grep xinit > /dev/null
-if [ $? -ne 0 ]; then
- startx ~/.config/X11/xinitrc
-fi
+# ps ca | grep xinit > /dev/null
+# if [ $? -ne 0 ]; then
+#  startx ~/.config/X11/xinitrc
+# fi
 

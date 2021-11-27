@@ -195,3 +195,51 @@ x11-themes/qtcurve gtk
 net-fs/nfs-utils nfsv41
 sys-libs/zlib static-libs
 media-sound/moc libsamplerate
+media-sound/pulseaudio equalizer
+# required by media-libs/mesa-21.2.5::gentoo[-video_cards_r100,-video_cards_radeon,-video_cards_r300,video_cards_radeonsi,-video_cards_r600,-video_cards_r200]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-video/ffmpeg-4.4-r1::gentoo[opengl]
+# required by media-gfx/blender-2.93.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libdrm-2.4.107 video_cards_radeon
+# required by media-libs/mesa-21.2.5::gentoo[-opencl,-video_cards_radeon,llvm,video_cards_radeonsi,-video_cards_r600,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-video/ffmpeg-4.4-r1::gentoo[opengl]
+# required by media-gfx/blender-2.93.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/libelf-3 abi_x86_32
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-21.2.5::gentoo[-opencl,-video_cards_radeon,llvm,video_cards_radeonsi,-video_cards_r600,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-video/ffmpeg-4.4-r1::gentoo[opengl]
+# required by media-gfx/blender-2.93.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/elfutils-0.185 abi_x86_32
+# required by dev-libs/elfutils-0.185::gentoo[bzip2]
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-21.2.5::gentoo[-opencl,-video_cards_radeon,llvm,video_cards_radeonsi,-video_cards_r600,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by media-video/ffmpeg-4.4-r1::gentoo[opengl]
+# required by media-gfx/blender-2.93.0-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-arch/bzip2-1.0.8-r1 abi_x86_32
+# required by games-action/minecraft-launcher-1035::gentoo
+# required by minecraft-launcher (argument)
+>=net-misc/curl-7.79.1 adns
+media-sound/mpd libsocr libsoxr tidal qobuz
+net-mail/mu emacs
+# required by games-emulation/yuzu-9999::guru
+# required by yuzu (argument)
+>=dev-libs/boost-1.76.0-r1 context
+media-gfx/krita color-management
+# required by media-gfx/krita-4.4.8-r1::gentoo[python_single_target_python3_9]
+# required by krita (argument)
+>=dev-python/PyQt5-5.15.4-r1 declarative
+# required by dev-python/PyQt5-5.15.4-r1::gentoo[multimedia]
+# required by media-gfx/krita-4.4.8-r1::gentoo[python_single_target_python3_9]
+# required by krita (argument)
+>=dev-qt/qtmultimedia-5.15.2-r2 widgets

@@ -10,12 +10,6 @@ location = /var/db/repos/ROKO__
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/ROKO__.git
 
-
-[nest]
-location = /var/db/repos/nest
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/nest.git
-
 [guru]
 location = /var/db/repos/guru
 sync-type = git

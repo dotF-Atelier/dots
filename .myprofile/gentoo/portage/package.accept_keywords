@@ -600,3 +600,35 @@
 =games-action/minecraft-launcher-1035 ~amd64
 # required by xanmod-rt (argument)
 =sys-kernel/xanmod-rt-5.13.1-r1 ~amd64
+# required by kazam (argument)
+=media-video/kazam-1.4.5 ~amd64
+# required by pfetch (argument)
+=app-misc/pfetch-0.6.0 ~amd64
+# required by macchina (argument)
+=app-misc/macchina-5.0.2 ~amd64
+# required by plexamp (argument)
+=media-sound/plexamp-3.4.5 ~amd64
+# required by app-accessibility/edbrowse (argument)
+=app-accessibility/edbrowse-3.7.5.1-r3 ~amd64
+# required by games-emulation/yuzu-9999::guru
+# required by yuzu (argument)
+=dev-libs/libfmt-8.0.1-r1 ~amd64
+# required by yuzu (argument)
+=games-emulation/yuzu-9999 **
+# required by dev-util/conan-1.42.0::gentoo
+# required by conan (argument)
+=dev-python/patch-ng-1.17.4 ~amd64
+# required by dev-util/conan-1.42.0::gentoo
+# required by conan (argument)
+=dev-python/pluginbase-1.0.1 ~amd64
+# required by dev-util/conan-1.42.0::gentoo
+# required by conan (argument)
+=dev-python/node-semver-0.8.0 ~amd64
+# required by conan (argument)
+=dev-util/conan-1.42.0 ~amd64
+# required by app-i18n/librime-1.7.3-r1::gentoo
+# required by app-i18n/rime-data-0.38.20180515::gentoo
+# required by app-i18n/fcitx5-rime-5.0.7::gentoo-zh
+# required by @selected
+# required by @world (argument)
+=dev-cpp/yaml-cpp-0.6.3-r4 ~amd64

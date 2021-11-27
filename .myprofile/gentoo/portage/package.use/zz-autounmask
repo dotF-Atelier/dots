@@ -230,3 +230,16 @@ media-sound/pulseaudio equalizer
 # required by games-action/minecraft-launcher-1035::gentoo
 # required by minecraft-launcher (argument)
 >=net-misc/curl-7.79.1 adns
+media-sound/mpd libsocr libsoxr tidal qobuz
+net-mail/mu emacs
+# required by games-emulation/yuzu-9999::guru
+# required by yuzu (argument)
+>=dev-libs/boost-1.76.0-r1 context
+media-gfx/krita -color-management
+# required by media-gfx/krita-4.4.8-r1::gentoo[python_single_target_python3_9]
+# required by krita (argument)
+>=dev-python/PyQt5-5.15.4-r1 declarative
+# required by dev-python/PyQt5-5.15.4-r1::gentoo[multimedia]
+# required by media-gfx/krita-4.4.8-r1::gentoo[python_single_target_python3_9]
+# required by krita (argument)
+>=dev-qt/qtmultimedia-5.15.2-r2 widgets

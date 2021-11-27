@@ -29,3 +29,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=sys-boot/etcher-1.5.115 GPL2
 # required by minecraft-launcher (argument)
 >=games-action/minecraft-launcher-1035 Mojang
+# required by plexamp (argument)
+>=media-sound/plexamp-3.4.5 all-rights-reserved
