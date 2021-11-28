@@ -152,6 +152,10 @@ prompt {
    text-color:@bg;
 }
 
+element-icon{
+    size: 25px;
+}
+
 element-text, element-icon {
     background-color: inherit;
     text-color:       inherit;
