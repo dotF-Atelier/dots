@@ -29,7 +29,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#34343B'
+    background: '#0F0F0F'
     foreground: '0xeeffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
@@ -39,14 +39,23 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x9A9996'
-    red:     '0x6f4749'
-    green:   '0x5af78e'
-    yellow:  '0xffcb6b'
-    blue:    '0x57c7ff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xeeffff'
+    black:   '0x282b2e'
+    red:     '0x784328'
+    green:   '0x7C2929'
+    yellow:  '0xF6F5F4'
+    blue:    '0x8A2E2E'
+    magenta: '0xFF004E'
+    cyan:    '0x935231'
+    white:   '0xAEAEAE'
+
+    #     black:   '0x9A9996'
+    #     red:     '0x6f4749'
+    #     green:   '0x5af78e'
+    #     yellow:  '0xffcb6b'
+    #     blue:    '0x57c7ff'
+    #     magenta: '0xc792ea'
+    #     cyan:    '0x89ddff'
+    #     white:   '0xeeffff'
 
   # Bright colors
   bright:

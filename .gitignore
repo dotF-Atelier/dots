@@ -94,4 +94,5 @@ workspace/
 .links/
 Desktop/
 .config/mypaint/
+.config/fcitx5/crash.log
 
