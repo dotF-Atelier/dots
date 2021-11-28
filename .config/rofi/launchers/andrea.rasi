@@ -43,7 +43,7 @@ window {
    location:         west;
    x-offset:         0%;
    y-offset:         25%;
-   width:            2
+   width:            25%;
 }
 
 mainbox {
