@@ -95,4 +95,4 @@ workspace/
 Desktop/
 .config/mypaint/
 .config/fcitx5/crash.log
-
+.config/autostart
