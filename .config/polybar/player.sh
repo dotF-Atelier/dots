@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# mpd first
+mpd_status=`mpc status`
+
+if [[ $mpd_status == *"[playing]"* ]]; then
+    echo `mpc current`
+    exit
+fi
+
 players=`playerctl -l`
 
 output="wait for playing..."
