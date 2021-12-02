@@ -97,3 +97,9 @@ Desktop/
 .config/fcitx5/crash.log
 .config/autostart
 .config/*-nativefier-*
+.config/discord/
+.config/flameshot/
+.ncmpcpp/
+.renderdoc/
+
+

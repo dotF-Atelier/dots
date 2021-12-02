@@ -1,105 +1,41 @@
-html, body {
-  background:#31313A;
-  font-family: "FantasqueSansMono Nerd Font";
-  color: #BF3954;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+body {
+	background: #31313A;
+	color: whitesmoke;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	margin: 7em;
+	margin-top: 6em;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 460px 600px 1fr;
-  grid-template-areas:
-    ". left right .";
-  column-gap: 80px;
-  justify-items: center;
-  align-items: center;
-  min-height: 100%;
-}
-
-.left-container {
-  grid-area: left;
-  aspect-ratio: 1/1;
-}
-
-.right-container {
-  grid-area: right;
-  height: 50%;
-  width: 100%;
-}
-
-.gif img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 45px;
-  padding-top: 60px;
-}
-
-.category {
-  display: flex;
-  flex-direction: column;
-  width: 180px;
-}
-
-.bookmarks {
-  display: flex;
-  justify-content: center;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.title {
-  font-size: 150%;
+h2 {
+	color: #BF3954;
 }
 
 li {
-  font-size: 18px;
-  list-style-type: none;
-  padding: 5px
+	list-style-type: none;
+	padding: 0;
+	margin: .5em;
 }
 
-a:link {
-  text-decoration: none;
-  color: #8F9191;
+img {
+	float: left;
+	margin-left: 10%;
+	max-width: 50%;
+    height: auto;
+	border-radius: 2%;
 }
 
-a:visited {
-  color: #8F9191;
+a {
+	text-decoration: none;
+	color: whitesmoke;
 }
 
-a:hover {
-  color: #FA7921;
+.bookmark-container {
+    padding: 2em;
 }
 
-.blinking {
-  animation: opacity 1s ease-in-out infinite;
-  opacity: 1;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+.bookmarks {
+	width: 20%;
+    display: inline-block;
+    padding: 2em;
 }
