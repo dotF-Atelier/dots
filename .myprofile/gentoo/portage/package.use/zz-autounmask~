@@ -8,4 +8,3 @@
 # required by @selected
 # required by @world (argument)
 >=net-misc/spice-gtk-0.39-r2 usbredir
-dev-util/renderdoc -python

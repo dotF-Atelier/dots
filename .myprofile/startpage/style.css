@@ -5,6 +5,7 @@ body {
 	text-align: center;
 	margin: 7em;
 	margin-top: 6em;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 h2 {
