@@ -29,6 +29,9 @@ export TERMINAL="alacritty"                   # Maximum events in history file
 export MYXPATH="$XDG_CONFIG_HOME/X11"
 export MYXINITRC="$MYXPATH/xinitrc"
 
+# Media
+export MYMUSIC="/mnt/ssd1/nfs_export/nfs_data/music"
+
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 

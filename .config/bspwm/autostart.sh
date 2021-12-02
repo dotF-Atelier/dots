@@ -6,6 +6,8 @@ dunst &
 bash $HOME/.config/polybar/launch.sh &
 
 xset +fp /home/npchitman/.config/local/share/fonts
+# xset +fp /home/npchitman/.local/share/fonts
+# xset +fp /home/npchitman/.myprofile/fonts
 xset fp rehash
 xsetroot -cursor_name left_ptr&
 

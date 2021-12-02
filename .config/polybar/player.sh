@@ -9,7 +9,6 @@ if [[ $mpd_status == *"[playing]"* ]]; then
 fi
 
 players=`playerctl -l`
-
 output="wait for playing..."
 for player in $players
 do
@@ -19,5 +18,4 @@ do
                 break
         fi
 done
-
 echo $output

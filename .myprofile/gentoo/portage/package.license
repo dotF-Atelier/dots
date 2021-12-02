@@ -31,3 +31,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=games-action/minecraft-launcher-1035 Mojang
 # required by plexamp (argument)
 >=media-sound/plexamp-3.4.5 all-rights-reserved
+# required by discord-bin (argument)
+>=net-im/discord-bin-0.0.16-r2 all-rights-reserved
