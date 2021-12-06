@@ -9,3 +9,9 @@
 # required by @world (argument)
 >=net-misc/spice-gtk-0.39-r2 usbredir
 net-misc/aria2 bittorrent
+media-sound/ncmpcpp outputs clock visualizer taglib
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.72::steam-overlay[steamruntime]
+# required by @selected
+# required by @world (argument)
+>=media-libs/mesa-21.3.1 abi_x86_32

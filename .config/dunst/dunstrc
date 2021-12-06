@@ -1,4 +1,3 @@
-
 #██████╗ ██╗   ██╗███╗   ██╗███████╗████████╗
 #██╔══██╗██║   ██║████╗  ██║██╔════╝╚══██╔══╝
 #██║  ██║██║   ██║██╔██╗ ██║███████╗   ██║
@@ -184,7 +183,7 @@
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
     #history = ctrl+mod4+h
-
+    #
     # Context menu.
     context = ctrl+mod1+c
 
