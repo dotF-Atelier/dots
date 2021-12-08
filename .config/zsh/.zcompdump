@@ -1759,6 +1759,7 @@ _comps=(
 'virt-xml-validate' '_libvirt'
 'visudo' '_visudo'
 'vitrage' '_openstack'
+'vman' '_man'
 'vmctl' '_vmctl'
 'vmstat' '_vmstat'
 'vncserver' '_vnc'
@@ -1963,6 +1964,7 @@ _services=(
 'unlzma' 'unxz'
 'VBoxHeadless' 'vboxheadless'
 'VBoxManage' 'vboxmanage'
+'vman' 'man'
 'xelatex' 'latex'
 'xetex' 'tex'
 'xzcat' 'unxz'
@@ -2022,21 +2024,6 @@ zle -C _list_expansions .list-choices _expand_word
 zle -C _most_recent_file .complete-word _most_recent_file
 zle -C _next_tags .list-choices _next_tags
 zle -C _read_comp .complete-word _read_comp
-bindkey '^X^R' _read_comp
-bindkey '^X?' _complete_debug
-bindkey '^XC' _correct_filename
-bindkey '^Xa' _expand_alias
-bindkey '^Xc' _correct_word
-bindkey '^Xd' _list_expansions
-bindkey '^Xe' _expand_word
-bindkey '^Xh' _complete_help
-bindkey '^Xm' _most_recent_file
-bindkey '^Xn' _next_tags
-bindkey '^Xt' _complete_tag
-bindkey '^X~' _bash_list-choices
-bindkey '^[,' _history-complete-newer
-bindkey '^[/' _history-complete-older
-bindkey '^[~' _bash_complete-word
 
 autoload -Uz _afew _alacritty _android _archlinux-java _artisan \
             _atach _bat _binutils-config _bitcoin-cli _bluetoothctl \

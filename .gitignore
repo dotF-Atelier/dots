@@ -102,6 +102,9 @@ Desktop/
 .ncmpcpp/
 .renderdoc/
 .config/blender/
-
-
+.config/unity3d/
+.lyrics/
+.sys1og.conf
+.gdb_history
+core
 
