@@ -28,7 +28,6 @@
 .config/mimeapps.list
 .config/neofetch/
 .config/nitrogen/
-.config/nvim/
 .config/pavucontrol.ini
 .config/pulse/6982d40bff7b1898140255466184f806-card-database.gdbm
 .config/pulse/6982d40bff7b1898140255466184f806-default-sink
@@ -107,4 +106,5 @@ Desktop/
 .sys1og.conf
 .gdb_history
 core
+.mbsyncrc
 
