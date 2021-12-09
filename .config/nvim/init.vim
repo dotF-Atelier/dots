@@ -1,8 +1,8 @@
-source basic.vim
-source func.vim
-source auto_commands.vim
-source key.vim
-source ui.vim
+source $XDG_CONFIG_HOME/nvim/basic.vim
+source $XDG_CONFIG_HOME/nvim/func.vim
+source $XDG_CONFIG_HOME/nvim/auto_commands.vim
+source $XDG_CONFIG_HOME/nvim/key.vim
+source $XDG_CONFIG_HOME/nvim/ui.vim
 
 "{ Some good references
 " 1. https://gist.github.com/suderman/1243665
