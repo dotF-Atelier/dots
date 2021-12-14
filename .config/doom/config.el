@@ -30,7 +30,7 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/workspace/notes/")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -55,18 +55,30 @@
 ;;
 ;; key binding
 (global-set-key "\C-h" 'delete-backward-char)
+
 ;; disable snipe mode
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
 (setq lsp-headerline-breadcrumb-enable t)
-;;
-;; (after! ccls
-;;   (setq ccls-initialization-options '(:index (:comments 2) :completion (:detailedLabel t)))
-;;   (set-lsp-priority! 'ccls 2)) ; optional as ccls is the default in Doom
-(setq lsp-clients-clangd-args '("-j=6"
+
+;; lsp
+;;;; clangd
+(setq lsp-clients-clangd-args '("-j=12"
                                 "--background-index"
                                 "--clang-tidy"
-                                "--completion-style=detailed"
+                                "--clang-tidy-checks=performance-*,bugprone-*"
+                                ;; "--completion-style=detailed"
                                 "--header-insertion=never"
                                 "--header-insertion-decorators=0"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
+
+;;;; ccls
+;; (after! ccls
+;;   (setq ccls-initialization-options '(:index (:threads 6 :comments 2)
+;;                                       :completion (:detailedLabel t)
+
+;;                                       ))
+;;   (set-lsp-priority! 'ccls 2)) ; optional as ccls is the default in Doom
+
+
+;; prevent load project from home directory
 (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))

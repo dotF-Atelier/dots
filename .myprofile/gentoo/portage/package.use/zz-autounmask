@@ -1,0 +1,5 @@
+# required by dev-lang/ruby-3.0.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-ruby/test-unit-3.5.2 ruby_targets_ruby30
+sys-libs/ncurses -gpm

@@ -154,7 +154,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = chromium
+    browser = google-chrome
 
     # Align icons left/right/off
     icon_position = left
@@ -163,7 +163,7 @@
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/
 
     # Limit icons size.
-    max_icon_size=128
+    max_icon_size=64
 
 [shortcuts]
 
