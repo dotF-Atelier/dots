@@ -26,7 +26,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-ayu-mirage)
-(setq doom-theme 'doom-spacegrey)
+(setq doom-theme 'doom-horizon)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -66,7 +66,7 @@
                                 "--background-index"
                                 "--clang-tidy"
                                 "--clang-tidy-checks=performance-*,bugprone-*"
-                                ;; "--completion-style=detailed"
+                                "--completion-style=detailed"
                                 "--header-insertion=never"
                                 "--header-insertion-decorators=0"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))

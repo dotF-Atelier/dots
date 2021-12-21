@@ -108,4 +108,7 @@ Desktop/
 core
 .mbsyncrc
 ".config/\345\276\256\344\277\241/"
+.config/btop/
+.config/fcitx5/conf/notifications.conf_57USj6
+.config/qutebrowser/
 

@@ -1,3 +1,5 @@
+#include "/home/npchitman/.config/X11/colors.Xresources"
+
 Xft.dpi:	120
 Xft.antialias:	true
 Xft.rgba:	rgb

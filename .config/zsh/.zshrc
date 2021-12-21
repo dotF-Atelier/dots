@@ -13,14 +13,14 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 # aliases
 source $ZDOTDIR/aliases.zsh
 
+# prompt
+PROMPT='%(?.%F{green} .%F{red} )%f %B%F{240}%1~%f%b -> '
+RPROMPT='%(?.%F .%F{red} %?)'
+
 # auto completion
 autoload -U compinit&& compinit
 _comp_options+=(globdots) # With hidden files
 source $ZDOTDIR/plugin/completion.zsh
-
-# prompt
-PROMPT='%(?.%F{green} .%F{red} )%f %B%F{240}%1~%f%b -> '
-RPROMPT='%(?.%F .%F{red} %?)'
 
 # if [[ -z $TMUX ]]; then
 #     # Fix issue where tmux creates duplicate path entries.
