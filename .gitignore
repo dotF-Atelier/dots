@@ -111,4 +111,5 @@ core
 .config/btop/
 .config/fcitx5/conf/notifications.conf_57USj6
 .config/qutebrowser/
-
+.config/zsh/.zcompdump
+.config/icalingua/

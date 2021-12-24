@@ -3,3 +3,4 @@
 # required by @world (argument)
 >=dev-ruby/test-unit-3.5.2 ruby_targets_ruby30
 sys-libs/ncurses -gpm
+net-print/cups zeroconf
