@@ -1,0 +1,42 @@
+body {
+	background: #31313A;
+	color: whitesmoke;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	margin: 7em;
+	margin-top: 6em;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+h2 {
+	color: #BF3954;
+}
+
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: .5em;
+}
+
+img {
+	float: left;
+	margin-left: 10%;
+	max-width: 50%;
+    height: auto;
+	border-radius: 2%;
+}
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.bookmark-container {
+    padding: 2em;
+}
+
+.bookmarks {
+	width: 20%;
+    display: inline-block;
+    padding: 2em;
+}

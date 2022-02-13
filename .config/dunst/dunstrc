@@ -1,4 +1,3 @@
-
 #██████╗ ██╗   ██╗███╗   ██╗███████╗████████╗
 #██╔══██╗██║   ██║████╗  ██║██╔════╝╚══██╔══╝
 #██║  ██║██║   ██║██╔██╗ ██║███████╗   ██║
@@ -155,7 +154,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = chromium
+    browser = google-chrome
 
     # Align icons left/right/off
     icon_position = left
@@ -164,7 +163,7 @@
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/
 
     # Limit icons size.
-    max_icon_size=128
+    max_icon_size=64
 
 [shortcuts]
 
@@ -184,24 +183,24 @@
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
     #history = ctrl+mod4+h
-
+    #
     # Context menu.
     context = ctrl+mod1+c
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#0F1718"
+    background = "#1c1e26"
     foreground = "#ffffff"
     timeout = 5
 
 [urgency_normal]
-    background = "#0F1718"
+    background = "#1c1e26"
     foreground = "#ffffff"
     timeout = 5
 
 [urgency_critical]
-    background = "#0F1718"
+    background = "#1c1e26"
     foreground = "#ffffff"
     timeout = 0
 

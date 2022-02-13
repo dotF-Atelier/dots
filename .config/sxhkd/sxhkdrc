@@ -1,44 +1,10 @@
 #!/bin/sh
-
-# system
-super + alt + {0}
-    {\
-    sudo s2ram
-\}
-
-# terminal
 super + {Return}
-	$TERMINAL
+        $TERMINAL
 
 # program launcher
 super + shift + d
-    run_dmenu
-
-# lockscreen
-#alt + shift + l
-	#slock
-
-# programs
-# variables in .bash_profile
-super + shift + {f,v,m,t}
-    {\
-    $TERMINAL -e $FMANAGER,\
-    $TERMINAL -e $EDITOR,\
-    $TERMINAL -e ncmpcpp,\
-    $TERMINAL -e rtorrent
-\}
-
-# browser profiles
-#super + alt + {b,p,y}
-#    {$BROWSER,$BROWSER_P,$BROWSER_Y}
-
-# scripts
-super + shift + r
-    redshift_toggle
-
-# brightness keybindings
-XF86MonBrightness{Up,Down}
-    xbacklight {-inc,-dec} 5 && brightness &
+        run_dmenu
 
 # media keys
 XF86Audio{Next,Prev,Play,Stop}
@@ -46,7 +12,7 @@ XF86Audio{Next,Prev,Play,Stop}
 
 # volume
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5%
+    pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
     pactl set-sink-volume 0 -5%
@@ -54,12 +20,15 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute 0 toggle
 
+# brightness
+XF86MonBrightnessUp
+    xbacklight -inc 10
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
 # screenshot keybindings
-Print
-    scrot "$HOME/Pictures/Screenshots/%Y-%m-%d-%H-%M-%S.png" && \
-	notify-send "Screenshot captured"
-ctrl + Print
-    scrot -C
+ctrl + alt + a
+    flameshot gui
 
 # make sxhkd reload its configuration files:
 super + Escape

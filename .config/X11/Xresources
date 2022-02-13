@@ -1,0 +1,11 @@
+#include "/home/npchitman/.config/X11/colors.Xresources"
+
+Xft.dpi:	120
+Xft.antialias:	true
+Xft.rgba:	rgb
+Xft.hinting:	true
+Xft.hintstyle:	hintslight
+Xft.autohit:	false
+Xft.lcdfilter:	lcddefault
+Xcursor.theme: nordzy
+Xcursor.size: 64

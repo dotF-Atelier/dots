@@ -13,8 +13,9 @@
 # style_icons_popup    style_normal    style_normal_grid    style_normal_grid_full    style_normal_grid_full_round
 # style_normal_grid_round    style_normal_purple    style_normal_purple_alt    style_normal_rainbow
 # style_normal_rainbow_sidebar
+# @import "~/.cache/wal/colors-rofi-dark"
 
-style="style_icons_full"
+# style="style_icons_full"
 
-#rofi -no-lazy-grab -show drun -theme launchers/"$style".rasi
+# rofi -no-lazy-grab -show drun -theme launchers/"$style".rasi
 rofi -no-lazy-grab -show drun -theme launchers/andrea.rasi

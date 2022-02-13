@@ -5,13 +5,12 @@
  * Copyright: None!
  */
 configuration {
-    /*drun-display-format: "{icon} {name}";*/
     display-drun: "Apps";
 	show-icons: true;
 	icon-theme: "Papirus-Dark";
 	hide-scrollbar: true;
     show-icons: true;
-	terminal: "termite";
+	terminal: "alacritty";
 	sidebar-mode: true;
     width: 21;
 }
@@ -19,19 +18,15 @@ configuration {
 
 /* global settings and color variables */
 * {
-   /*maincolor:        #50fa7b;*/
    maincolor:        #e8645f;
    highlight:        bold #50fa7b;
    urgentcolor:      #ff79c6;
 
    fg:               #f8f8f2;
-   /*bg:               #282a36;*/
+   // bg:               #282a36;
 
    bg:               #0F1718;
-   /*fg:               #A1C6BD;*/
-   /*blackselect:      #44475a;*/
    blackselect:      #944348;
-   /*cyan:             #8be9fd;*/
    cyan:             #e8645f;
 
    font: "ARIAL bold 17";
@@ -47,7 +42,8 @@ window {
    anchor:           west;
    location:         west;
    x-offset:         0%;
-   y-offset:         26%;
+   y-offset:         25%;
+   width:            25%;
 }
 
 mainbox {
@@ -154,6 +150,15 @@ prompt {
    padding:6px 9px;
    background-color: @maincolor;
    text-color:@bg;
+}
+
+element-icon{
+    size: 25px;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 entry {

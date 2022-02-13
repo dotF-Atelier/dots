@@ -1,0 +1,3 @@
+app-emulation/qemu qemu_softmmu_targets_arm qemu_softmmu_targets_x86_64 qemu_softmmu_targets_sparc
+app-emulation/qemu qemu_user_targets_x86_64
+app-emulation/qemu spice usbredir

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+flameshot gui
+exit
+
+# 截图保存目录
+snapshot_dir="$HOME/Pictures/Screenshots"
+# 截图格式
+pic_format="%Y%m%d-%H:%M:%S.png"
+
+# 选择区域截图并复制到剪贴板
+if  [[ $1 = "-s" ]]; then
+    sleep 1 && scrot -s '/tmp/%F_%T_$wx$h.png' -e ' \
+    xclip -selection clipboard -target image/png -i $f' && \
+    notify-send "select area"
+
+# 选择区域截图并保存
+elif [[ $1 = "-a" ]]; then
+    sleep 1 && scrot -s "${snapshot_dir}/${pic_format}" -e ' \
+    xclip -selection clipboard -target image/png -i $f' && \
+    notify-send "select area"
+
+# 截取当前整个屏幕画面
+else
+    scrot "${snapshot_dir}/${pic_format}" && \
+    notify-send "quick_snapshot"
+fi
+

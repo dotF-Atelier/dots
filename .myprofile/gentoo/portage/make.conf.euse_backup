@@ -1,0 +1,45 @@
+# These settings were set by the catalyst build script that automatically
+# built this stage.
+# Please consult /usr/share/portage/config/make.conf.example for a more
+# detailed example.
+COMMON_FLAGS="-march=znver3 -O2 -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+# NOTE: This stage was built with the bindist Use flag enabled
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+# This sets the language of build output to English.
+# Please keep this setting intact when reporting bugs.
+LC_MESSAGES=C
+
+# How many parallel compiliations should occur when installing packages
+MAKEOPTS="-j17"
+
+# USE flags
+USE="X -systemd clang xinerama man pulseaudio alsa -nvidia -wayland \
+     -vulkan"
+
+# Graphics Cards
+VIDEO_CARDS="amdgpu radeonsi"
+
+## (For mouse, keyboard, and Synaptics touchpad support)
+INPUT_DEVICES="evdev wacom"
+
+# Mirrors
+GENTOO_MIRRORS="https://mirrors.tuna.tsinghua.edu.cn/gentoo"
+
+# Bootloader
+GRUB_PLATFORMS="efi-64"
+
+# QEMU
+QEMU_SOFTMMU_TARGETS="i386 x86_64 arm"
+QEMU_USER_TARGETS="x86_64"
+
+# CPU FLAGS
+# For AMD 5700G
+CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"

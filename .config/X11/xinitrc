@@ -1,0 +1,5 @@
+#!/bin/sh
+source $MYXPATH/xprofile
+xrdb -merge $MYXPATH/Xresources
+sxhkd&
+eval "$(dbus-launch --sh-syntax --exit-with-session bspwm)"

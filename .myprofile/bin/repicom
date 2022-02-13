@@ -1,0 +1,4 @@
+#!/bin/bash
+killall picom 
+picom &>/dev/null &
+disown
