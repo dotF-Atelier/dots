@@ -119,5 +119,7 @@ workspaces/
 .yarnrc
 .icons
 .electron-gyp/
-
+.w3m/
+.config/pulse/
+.config/qBittorrent/
 

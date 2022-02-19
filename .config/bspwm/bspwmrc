@@ -23,7 +23,7 @@ bspc config single_monocle          true
 
 bspc rule -a Firefox        desktop='^2' follow=on
 bspc rule -a discord        desktop='^4'
-bspc rule -a mpv            desktop='^5' state=fullscreen follow=on
+bspc rule -a mpv            desktop='^4' follow=on
 bspc rule -a feh            state=floating follow=on
 bspc rule -a Tilda          state=floating floating=on focus=on sticky=on border=off
 bspc rule -a Demo           state=floating floating=on focus=on sticky=on

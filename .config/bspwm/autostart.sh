@@ -1,6 +1,7 @@
 #!/bin/bash
+sxhkd&
 picom &
-fcitx5 &
+ibus-daemon -drx
 dunst &
 bash $HOME/.config/polybar/launch.sh &
 
