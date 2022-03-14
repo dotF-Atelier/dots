@@ -6,12 +6,12 @@
  */
 configuration {
     display-drun: "Apps";
-	show-icons: true;
-	icon-theme: "Papirus-Dark";
-	hide-scrollbar: true;
     show-icons: true;
-	terminal: "termite";
-	sidebar-mode: true;
+    icon-theme: "Papirus-Dark";
+    hide-scrollbar: true;
+    show-icons: true;
+    terminal: "alacritty";
+    sidebar-mode: true;
     width: 21;
 }
 

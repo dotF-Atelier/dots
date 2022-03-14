@@ -33,3 +33,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=media-sound/plexamp-3.4.5 all-rights-reserved
 # required by discord-bin (argument)
 >=net-im/discord-bin-0.0.16-r2 all-rights-reserved
+# required by microsoft-edge (argument)
+>=www-client/microsoft-edge-96.0.1054.62 microsoft-edge

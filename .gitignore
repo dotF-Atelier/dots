@@ -113,3 +113,6 @@ core
 .config/qutebrowser/
 .config/zsh/.zcompdump
 .config/icalingua/
+.bundle/
+.calibre-web/
+.yarnrc

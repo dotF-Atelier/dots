@@ -1,16 +1,10 @@
 #!/bin/sh
-# start the D-Bus session bus before Fcitx starts
-export XMODIFIERS="@im=fcitx"
-export QT_IM_MODULE=fcitx
-export GTK_IM_MODULE=fcitx
-
-# x env
-export _JAVA_AWT_WM_NONREPARENTING=1
-export EDITOR="emacs"
-export TERMINAL="alacritty"
-export BROWSER="firefox"
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
 eval "$(dbus-launch --sh-syntax --exit-with-session)"
 [[ -f $MYXPATH/Xresources ]] && xrdb -merge $MYXPATH/Xresources
+# [[ -f $MYXPATH/Xresources ]] && xmodmap $MYXPATH/Xmodmap
 sxhkd&
 exec bspwm

@@ -34,6 +34,7 @@ export MYMUSIC="/mnt/ssd1/nfs_export/nfs_data/music"
 
 # fzf
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # ps ca | grep xinit > /dev/null
 # if [ $? -ne 0 ]; then

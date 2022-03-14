@@ -1,9 +1,4 @@
 #!/bin/sh
-super + alt + {0}
-    {\
-    sudo s2ram
-\}
-
 super + {Return}
         $TERMINAL
 

@@ -2,6 +2,8 @@
 picom &
 fcitx5 &
 dunst &
+tilda &
+ibus-daemon -drx
 bash $HOME/.config/polybar/launch.sh &
 
 xset +fp $HOME/.config/local/share/fonts
