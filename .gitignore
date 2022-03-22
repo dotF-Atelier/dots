@@ -116,3 +116,12 @@ core
 .bundle/
 .calibre-web/
 .yarnrc
+.GlobalProtect/
+.babel.json
+.config/Qobuz Desktop player/
+.config/qobuz-dl/
+.electron/
+.gp1234/
+.sqlite_history
+network/
+

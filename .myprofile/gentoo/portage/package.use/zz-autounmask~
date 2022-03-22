@@ -30,7 +30,8 @@ net-print/cups zeroconf
 # required by dev-python/xapp-2.2.1::gentoo
 # required by net-wireless/blueberry-1.4.2::gentoo[python_single_target_python3_9]
 # required by blueberry (argument)
->=x11-libs/xapps-2.2.4 introspection
+# move x11-libs/xapps x11-libs/xapp
+>=x11-libs/xapp-2.2.4 introspection
 # required by x11-libs/xapps-2.2.4::gentoo
 # required by dev-python/xapp-2.2.1::gentoo
 # required by net-wireless/blueberry-1.4.2::gentoo[python_single_target_python3_9]

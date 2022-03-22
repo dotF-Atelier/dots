@@ -25,3 +25,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=net-im/discord-bin-0.0.16-r2 all-rights-reserved
 # required by microsoft-edge (argument)
 >=www-client/microsoft-edge-96.0.1054.62 microsoft-edge
+# required by nerd-fonts (argument)
+>=media-fonts/nerd-fonts-2.1.0 Vic-Fieger-License

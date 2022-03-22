@@ -3,7 +3,6 @@ picom &
 fcitx5 &
 dunst &
 ibus-daemon -drx
-emacs --daemon
 bash $HOME/.config/polybar/launch.sh &
 
 xset +fp $HOME/.config/local/share/fonts
