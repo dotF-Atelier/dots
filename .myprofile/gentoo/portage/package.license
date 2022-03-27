@@ -27,3 +27,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=www-client/microsoft-edge-96.0.1054.62 microsoft-edge
 # required by nerd-fonts (argument)
 >=media-fonts/nerd-fonts-2.1.0 Vic-Fieger-License
+# required by clion (argument)
+>=dev-util/clion-2021.3.2 IDEA IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal

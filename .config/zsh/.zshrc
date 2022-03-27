@@ -44,3 +44,9 @@ my-backward-delete-word() {
 zle -N my-backward-delete-word
 bindkey '^W' my-backward-delete-word
 source $ZDOTDIR/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# vterm scroll back
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+

@@ -124,4 +124,9 @@ core
 .gp1234/
 .sqlite_history
 network/
+.clangd
+.config/JetBrains/
+.config/clangd/
+.java/
+.taichi/
 

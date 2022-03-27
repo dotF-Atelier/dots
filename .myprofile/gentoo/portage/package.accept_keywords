@@ -1,2 +1,6 @@
 # required by =x11-misc/picom-jonaburg-9999 (argument)
 =x11-misc/picom-jonaburg-9999 **
+# required by =app-editors/emacs-29.0.9999 (argument)
+=app-editors/emacs-29.0.9999 **
+# required by =app-editors/emacs-28.0.9999-r1 (argument)
+=app-editors/emacs-28.0.9999-r1 **
