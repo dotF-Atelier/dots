@@ -63,7 +63,8 @@
 (setq lsp-headerline-breadcrumb-enable t)
 
 ;; lsp
-;;;; clangd
+;; clangd
+(setq company-idle-delay 0.01)
 (setq lsp-clients-clangd-args '("-j=12"
                                 "--background-index"
                                 "--clang-tidy"
@@ -76,14 +77,13 @@
   :post-config
   (setq lsp-enable-on-type-formatting nil))
 
-;;;; ccls
+;; ccls
 ;; (after! ccls
 ;;   (setq ccls-initialization-options '(:index (:threads 6 :comments 2)
-;;                                      :completion (:detailedLabel t)
+;;                                      :completion (:detailedLabel nil)
 
 ;;                                       ))
-;;   (set-lsp-priority! 'ccls 2)) ; optional as ccls is the default in Doom
-
+;;   (set-lsp-priority! 'ccls 1)) ; optional as ccls is the default in Doom
 
 
 ;; prevent load project from home directory
