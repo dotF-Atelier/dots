@@ -6,7 +6,7 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
-(setq user-full-name "Npchitman"
+(setq user-full-name "Kingstom"
       user-mail-address "npchitman@outlook.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
@@ -54,6 +54,12 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 ;;
+;;
+
+;; (setq which-key-idle-delay 1.0
+;;       which-key-idle-secondary-delay 0
+;;       which-key-use-C-h-commands nil
+;;       which-key-side-window-max-height 1.0)
 
 ;; key binding
 (define-key evil-insert-state-map (kbd "C-h") 'delete-backward-char)
@@ -64,7 +70,7 @@
 
 ;; lsp
 ;; clangd
-(setq company-idle-delay 0.01)
+;; (setq company-idle-delay 0.01)
 (setq lsp-clients-clangd-args '("-j=12"
                                 "--background-index"
                                 "--clang-tidy"
@@ -72,19 +78,11 @@
                                 "--completion-style=detailed"
                                 "--header-insertion=never"
                                 "--header-insertion-decorators=0"))
+
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 (use-package-hook! lsp-mode
   :post-config
   (setq lsp-enable-on-type-formatting nil))
-
-;; ccls
-;; (after! ccls
-;;   (setq ccls-initialization-options '(:index (:threads 6 :comments 2)
-;;                                      :completion (:detailedLabel nil)
-
-;;                                       ))
-;;   (set-lsp-priority! 'ccls 1)) ; optional as ccls is the default in Doom
-
 
 ;; prevent load project from home directory
 (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
