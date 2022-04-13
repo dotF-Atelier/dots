@@ -45,3 +45,4 @@ alias lynx='lynx -vikeys -accept_all_cookies'
 alias trans_cn='trans -t zh'
 
 alias cdgr='cd `git rev-parse --show-toplevel`'
+alias pq='proxychains -q'

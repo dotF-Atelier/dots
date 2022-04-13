@@ -29,3 +29,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=media-fonts/nerd-fonts-2.1.0 Vic-Fieger-License
 # required by clion (argument)
 >=dev-util/clion-2021.3.2 IDEA IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal
+# required by games-server/steamcmd (argument)
+>=games-server/steamcmd-1.0-r4 Steam

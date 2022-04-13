@@ -303,3 +303,4 @@ net-print/cups zeroconf
 # required by dev-ruby/kpeg-1.3.1::gentoo[-test,ruby_targets_ruby26]
 >=dev-ruby/json-2.6.1 ruby_targets_ruby30
 dev-db/mysql -perl
+net-mail/mu emacs

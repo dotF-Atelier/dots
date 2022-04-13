@@ -25,7 +25,7 @@ EMERGE_DEFAULT_OPTS="--jobs=16 --load-average=14.4"
 # CCACHE_DIR="/var/cache/ccache"
 
 # USE flags
-USE="X clang -systemd xinerama pulseaudio alsa -nvidia -wayland vulkan -doc -h"
+USE="X clang -systemd xinerama pulseaudio alsa -nvidia -wayland vulkan -doc"
 
 # Graphics Cards
 VIDEO_CARDS="amdgpu radeonsi"

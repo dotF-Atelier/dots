@@ -3,6 +3,10 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
+(setq package-archives '(("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("org-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+                         ))
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
@@ -56,46 +60,51 @@
 ;;
 ;;
 
-;; (setq which-key-idle-delay 1.0
-;;       which-key-idle-secondary-delay 0
-;;       which-key-use-C-h-commands nil
-;;       which-key-side-window-max-height 1.0)
+(setq which-key-idle-delay 1.0
+      which-key-idle-secondary-delay 0
+      which-key-use-C-h-commands nil
+      which-key-side-window-max-height 1.0)
 
 ;; key binding
 (define-key evil-insert-state-map (kbd "C-h") 'delete-backward-char)
+(set-evil-initial-state! 'mu4e-main-mode 'insert)
 
 ;; disable snipe mode
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
-(setq lsp-headerline-breadcrumb-enable t)
 
 ;; lsp
 ;; clangd
 ;; (setq company-idle-delay 0.01)
+(setq lsp-headerline-breadcrumb-enable t)
 (setq lsp-clients-clangd-args '("-j=12"
+                                "--enable-config"
                                 "--background-index"
-                                "--clang-tidy"
-                                "--clang-tidy-checks=performance-*,bugprone-*"
                                 "--completion-style=detailed"
                                 "--header-insertion=never"
                                 "--header-insertion-decorators=0"))
 
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
-(use-package-hook! lsp-mode
-  :post-config
-  (setq lsp-enable-on-type-formatting nil))
 
 ;; prevent load project from home directory
 (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
 (add-hook 'prog-mode-hook #'yas-minor-mode)
-(setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
+(setq projectile-ignored-projects '("/home/npchitman"))
+;; (setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
 
 ;; icons scale
 (setq inhibit-compacting-font-caches t
-      all-the-icons-scale-factor 1.0)
+      all-the-icons-scale-factor 0.9)
 
-;; tabbar fonts
-(after! centaur-tabs (centaur-tabs-change-fonts "arial" 120))
+;; (setq +mu4e-gmail-accounts '(("kingstom.chen@gmail.com" . "/kingstom")))
 
-
-
-;; tabs
+;; (setq mu4e-get-mail-command "mbsync --all"
+;;       ;; get emails and index every 5 minutes
+;;       mu4e-update-interval 300
+;;       ;; send emails with format=flowed
+;;       mu4e-compose-format-flowed t
+;;       ;; no need to run cleanup after indexing for gmail
+;;       mu4e-index-cleanup nil
+;;       mu4e-index-lazy-check t
+;;       ;; more sensible date format
+;;       mu4e -headers-date-format "%d.%m.%y"
+;;       )

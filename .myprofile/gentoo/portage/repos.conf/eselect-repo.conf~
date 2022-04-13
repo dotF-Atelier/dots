@@ -11,6 +11,12 @@ sync-type = git
 sync-uri = https://github.com/gentoo-mirror/ROKO__.git
 
 
+
+[AzP]
+location = /var/db/repos/AzP
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/AzP.git
+
 [nest]
 location = /var/db/repos/nest
 sync-type = git
@@ -20,8 +26,3 @@ sync-uri = https://github.com/gentoo-mirror/nest.git
 location = /var/db/repos/guru
 sync-type = git
 sync-uri = https://github.com/gentoo-mirror/guru.git
-
-[cg]
-location = /var/db/repos/cg
-sync-type = git
-sync-uri = https://github.com/gentoo-mirror/cg.git
