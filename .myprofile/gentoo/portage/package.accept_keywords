@@ -1,2 +1,4 @@
 # required by =x11-misc/picom-jonaburg-9999 (argument)
 =x11-misc/picom-jonaburg-9999 **
+# required by =neovim-9999 (argument)
+=app-editors/neovim-9999 **
