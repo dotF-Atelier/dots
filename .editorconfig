@@ -10,7 +10,7 @@ insert_final_newline = true
 
 # Tab indentation (no size specified)
 [Makefile]
-indent_style = space
+indent_style = tab
 
-[*.{c,h,cc,cpp,hpp}]
+[*.{c,h,cpp,hpp}]
 indent_size = 4

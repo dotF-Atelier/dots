@@ -129,4 +129,6 @@ network/
 .config/clangd/
 .java/
 .taichi/
-
+.lldb/
+.config/steam-tui/
+.cert/

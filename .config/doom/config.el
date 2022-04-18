@@ -76,7 +76,7 @@
 ;; clangd
 ;; (setq company-idle-delay 0.01)
 (setq lsp-headerline-breadcrumb-enable t)
-(setq lsp-clients-clangd-args '("-j=12"
+(setq lsp-clients-clangd-args '("-j=16"
                                 "--enable-config"
                                 "--background-index"
                                 "--completion-style=detailed"
@@ -88,7 +88,7 @@
 ;; prevent load project from home directory
 (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
 (add-hook 'prog-mode-hook #'yas-minor-mode)
-(setq projectile-ignored-projects '("/home/npchitman"))
+(setq projectile-ignored-projects '("$HOME"))
 ;; (setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
 
 ;; icons scale

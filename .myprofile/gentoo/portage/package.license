@@ -31,3 +31,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=dev-util/clion-2021.3.2 IDEA IDEA_Academic IDEA_Classroom IDEA_OpenSource IDEA_Personal
 # required by games-server/steamcmd (argument)
 >=games-server/steamcmd-1.0-r4 Steam
+# required by media-fonts/corefonts (argument)
+>=media-fonts/corefonts-1-r7 MSttfEULA
