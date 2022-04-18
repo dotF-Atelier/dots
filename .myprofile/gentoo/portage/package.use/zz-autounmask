@@ -304,3 +304,4 @@ net-print/cups zeroconf
 >=dev-ruby/json-2.6.1 ruby_targets_ruby30
 dev-db/mysql -perl
 net-mail/mu emacs
+app-text/zathura-meta cb pdf

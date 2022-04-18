@@ -50,3 +50,5 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
     alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
 fi
 
+
+alias luamake=/home/npchitman/build_tmp/lua-language-server/3rd/luamake/luamake

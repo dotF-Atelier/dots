@@ -11,7 +11,7 @@
     frame_width = 1
     frame_color = "#333333"
 
-    font = MalOTF 13.5
+    font = Sans 12
 
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -49,17 +49,17 @@
     # window allows bounces back and forth.
     # This option conflicts with "word_wrap".
     # Set to 0 to disable.
-    bounce_freq = 3
+    bounce_freq = 0
 
 
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = -1
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
-    word_wrap = no
+    word_wrap = yes
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
@@ -77,7 +77,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "700x4-25+40"
+    geometry = "900x5-25+40"
 
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -154,13 +154,13 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = google-chrome
+    # browser = google-chrome
 
     # Align icons left/right/off
     icon_position = left
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/
+    icon_path = /usr/share/icons/Papirus-Dark/16x16/devices/
 
     # Limit icons size.
     max_icon_size=64
@@ -177,12 +177,12 @@
 
     # Close all notifications.
     # close_all = ctrl+shift+space
-    #close_all = ctrl+mod1+space
+    close_all = ctrl+mod1+space
 
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    #history = ctrl+mod4+h
+    history = ctrl+mod4+h
     #
     # Context menu.
     context = ctrl+mod1+c
@@ -192,19 +192,15 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#1c1e26"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 10
 
 [urgency_normal]
     background = "#1c1e26"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 10
 
 [urgency_critical]
     background = "#1c1e26"
     foreground = "#ffffff"
     timeout = 0
 
-[Spotify]
-    appname = Spotify
-    format = "%s\n%b"
-    timeout = 5

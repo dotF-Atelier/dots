@@ -1,0 +1,53 @@
+#!/bin/bash
+
+translate_cmd="trans -e google -t zh -brief "
+
+translate(){
+	# source
+	echo
+	echo '----> [SOURCE]'
+	echo $1
+
+	echo
+
+	# translation
+	echo '----> [TRANSLATION]'
+	translation_text=`eval "$translate_cmd '$1'"`
+	echo $translation_text
+	dunstify " TRANSLATION" "\======================\n$translation_text" # --icon=$HOME/.local/share/icons/doom.png
+	echo
+	echo "=============="
+}
+
+if [[ $1 == "loop" ]];then
+	old_clip=""
+	new_clip=""
+	is_init=false
+	while true
+	do
+		new_clip=`xclip -sel clip -o`
+	
+		#debug
+		# echo
+		# echo '--debug--'
+		# echo  "newclip: $new_clip"
+		# echo  "oldclip: $old_clip"
+		# echo '--debug--'
+		# echo
+	
+		if not $is_init;then
+			old_clip=$new_clip
+			is_init=true
+			sleep 0.5
+		fi
+	
+		if [[ $new_clip != $old_clip ]];then
+			translate "$new_clip"
+			sleep 2
+		fi
+		sleep 1.5
+		old_clip=$new_clip
+	done
+else
+	translate "$1"
+fi

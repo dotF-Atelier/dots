@@ -59,6 +59,10 @@ super + y
 super + b
 	bspc node -s biggest
 
+# translate select text
+super + ctrl + Tab
+	translator "`xclip -o`"
+
 #
 # state/flags
 #
