@@ -3,23 +3,30 @@
 translate_cmd="trans -e google -t zh -brief "
 
 translate(){
+	t_source=`echo $1 | tr '\n' ' '`
 	# source
 	echo
 	echo '----> [SOURCE]'
-	echo $1
+	echo $t_source
 
 	echo
 
 	# translation
 	echo '----> [TRANSLATION]'
-	translation_text=`eval "$translate_cmd '$1'"`
+	# echo $translate_cmd
+	# echo
+	# echo $t_source
+	# echo
+	# echo "$translate_cmd '$t_source'"
+	# echo
+	translation_text=`eval "$translate_cmd \"$t_source\""`
 	echo $translation_text
 	dunstify " TRANSLATION" "\======================\n$translation_text" # --icon=$HOME/.local/share/icons/doom.png
 	echo
 	echo "=============="
 }
 
-if [[ $1 == "loop" ]];then
+if [[ $1 == "test" ]];then
 	old_clip=""
 	new_clip=""
 	is_init=false
