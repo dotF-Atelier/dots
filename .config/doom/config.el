@@ -77,11 +77,16 @@
 ;; (setq company-idle-delay 0.01)
 (setq lsp-headerline-breadcrumb-enable t)
 (setq lsp-clients-clangd-args '("-j=16"
+                                "--all-scopes-completion"
+                                "--clang-tidy"
                                 "--enable-config"
                                 "--background-index"
                                 "--completion-style=detailed"
                                 "--header-insertion=never"
-                                "--header-insertion-decorators=0"))
+                                "--log=verbose"
+                                "--pch-storage=memory"
+                                "--query-driver=/usr/bin/g++"
+                                "--header-insertion-decorators"))
 
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 

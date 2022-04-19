@@ -2,3 +2,5 @@
 =x11-misc/picom-jonaburg-9999 **
 # required by =neovim-9999 (argument)
 =app-editors/neovim-9999 **
+# required by sys-libs/zlib-ng (argument)
+=sys-libs/zlib-ng-2.0.6 **

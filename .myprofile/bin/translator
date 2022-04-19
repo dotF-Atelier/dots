@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 translate_cmd="${SCRIPT_DIR}/trans -e google -t zh -brief "
 
 translate(){
-	t_source=`echo $1 | tr '\n' ' '`
+	t_source=`echo $1 | tr '\n' ' ' | tr '\"' '“' `
 	# source
 	echo
 	echo '----> [SOURCE]'
@@ -14,11 +14,11 @@ translate(){
 
 	# translation
 	echo '----> [TRANSLATION]'
-	# echo $translate_cmd
+	# echo translate_cmd: $translate_cmd
 	# echo
-	# echo $t_source
+	# echo t_source: $t_source
 	# echo
-	# echo "$translate_cmd '$t_source'"
+	# echo combined: "$translate_cmd \"$t_source\""
 	# echo
 	translation_text=`eval "$translate_cmd \"$t_source\""`
 	echo $translation_text
