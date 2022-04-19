@@ -1,6 +1,7 @@
 #!/bin/bash
 
-translate_cmd="trans -e google -t zh -brief "
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+translate_cmd="${SCRIPT_DIR}/trans -e google -t zh -brief "
 
 translate(){
 	t_source=`echo $1 | tr '\n' ' '`
@@ -21,7 +22,7 @@ translate(){
 	# echo
 	translation_text=`eval "$translate_cmd \"$t_source\""`
 	echo $translation_text
-	dunstify " TRANSLATION" "\======================\n$translation_text" # --icon=$HOME/.local/share/icons/doom.png
+	notify-send " TRANSLATION" "\======================\n$translation_text" # --icon=$HOME/.local/share/icons/doom.png
 	echo
 	echo "=============="
 }
