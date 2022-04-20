@@ -76,6 +76,7 @@
 ;; clangd
 ;; (setq company-idle-delay 0.01)
 (setq lsp-headerline-breadcrumb-enable t)
+(setq lsp-log-io t)
 (setq lsp-clients-clangd-args '("-j=16"
                                 "--all-scopes-completion"
                                 "--clang-tidy"
@@ -85,9 +86,8 @@
                                 "--header-insertion=never"
                                 "--log=verbose"
                                 "--pch-storage=memory"
-                                "--query-driver=/usr/bin/g++"
+                                ;; "--query-driver=/usr/bin/g++"
                                 "--header-insertion-decorators"))
-
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
 ;; prevent load project from home directory
