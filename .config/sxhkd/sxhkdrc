@@ -23,6 +23,9 @@ XF86AudioMute
 # screenshot keybindings
 ctrl + alt + a
     flameshot gui
+# screenshot keybindings
+ctrl + alt + w
+	flameshot gui && xclip -o -sel clip -t image/png > /tmp/test.png && translator "$(tesseract /tmp/test.png stdout)"
     # snapshot
 
 # make sxhkd reload its configuration files:

@@ -23,8 +23,20 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'semi-light)
+;; (setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'semi-light)
+(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'normal)
       doom-variable-pitch-font (font-spec :family "arial" :size 19))
+;; Set font for chinese characters
+;; Font should be twice the width of asci chars so that org tables align
+;; This will break if run in terminal mode, so use conditional to only run for GUI.
+(defun chinese-font-reload()
+  "reload chinese fonts"
+  (interactive)
+  (if (display-graphic-p)
+      (dolist (charset '(kana han cjk-misc bopomofo))
+        (set-fontset-font (frame-parameter nil 'font)
+        ;; charset (font-spec :family "Hiragino Sans GB" :size 18))))
+        charset (font-spec :family "WenQuanYi Micro Hei Mono" :size 18)))))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the

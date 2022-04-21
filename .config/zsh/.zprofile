@@ -37,8 +37,8 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # proxy
-export http_proxy='http://192.168.1.3:7893'
-export https_proxy='http://192.168.1.3:7893'
+export http_proxy='socks5://192.168.1.3:7893'
+export https_proxy='socks5://192.168.1.3:7893'
 export all_proxy='socks5://192.168.1.3:7893'
 
 # ps ca | grep xinit > /dev/null
