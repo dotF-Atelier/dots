@@ -307,3 +307,7 @@ net-mail/mu emacs
 app-text/zathura-meta cb pdf
 sys-libs/zlib-ng zlib
 media-libs/imgui glfw freetype
+x11-libs/gtk+:3 wayland
+# required by mail-client/thunderbird-91.8.1::gentoo[system-libvpx]
+# required by thunderbird (argument)
+>=media-libs/libvpx-1.11.0 postproc

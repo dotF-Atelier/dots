@@ -139,3 +139,6 @@ note/
 .gsutil/
 OneDrive/
 .config/rclone/rclone.conf
+.config/calibre/
+Documents/
+
