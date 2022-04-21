@@ -306,3 +306,4 @@ dev-db/mysql -perl
 net-mail/mu emacs
 app-text/zathura-meta cb pdf
 sys-libs/zlib-ng zlib
+media-libs/imgui glfw freetype

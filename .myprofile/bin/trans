@@ -5783,4 +5783,66 @@ Mort Yao <soi@mort.ninja>.
 EOF
 export TRANS_MANPAGE
 export TRANS_BUILD=release
-gawk -f <(echo -E "$TRANS_PROGRAM") - "$@"
+
+trans(){
+    gawk -f <(echo -E "$TRANS_PROGRAM") - "$@"
+}
+
+# SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+translate_cmd="trans -e google -t zh -brief "
+
+translate(){
+	t_source=$(echo "$1" | tr '\n' ' ' | tr '\"' '“')
+	# source
+	echo
+	echo '----> [SOURCE]'
+	echo "$t_source"
+
+	echo
+
+	# translation
+	echo '----> [TRANSLATION]'
+	# echo
+	# echo '--debug--'
+	# echo translate_cmd t_source: "$translate_cmd \"$t_source\""
+	# echo '--debug--'
+	# echo
+	translation_text=$(eval "$translate_cmd \"$t_source\"")
+	echo "$translation_text"
+	notify-send " TRANSLATION" "\======================\n$translation_text" --icon="$HOME"/.local/share/icons/doom.png -u critical
+	echo
+	echo "=============="
+}
+
+if [ "$1" == "test" ];then
+	old_clip=""
+	new_clip=""
+	is_init=false
+	while true
+	do
+		new_clip=$(xclip -sel clip -o)
+
+		#debug
+		# echo
+		# echo '--debug--'
+		# echo  "newclip: $new_clip"
+		# echo  "oldclip: $old_clip"
+		# echo '--debug--'
+		# echo
+
+		if not $is_init;then
+			old_clip=$new_clip
+			is_init=true
+			sleep 0.5
+		fi
+
+		if [ "$new_clip" != "$old_clip" ];then
+			translate "$new_clip"
+			sleep 2
+		fi
+		sleep 1.5
+		old_clip=$new_clip
+	done
+else
+	translate "$1"
+fi
