@@ -5814,7 +5814,7 @@ translate(){
 	echo "=============="
 }
 
-if [[ $1 == "test" ]];then
+if [ "$1" == "test" ];then
 	old_clip=""
 	new_clip=""
 	is_init=false
@@ -5836,7 +5836,7 @@ if [[ $1 == "test" ]];then
 			sleep 0.5
 		fi
 
-		if [[ $new_clip != $old_clip ]];then
+		if [ "$new_clip" != "$old_clip" ];then
 			translate "$new_clip"
 			sleep 2
 		fi

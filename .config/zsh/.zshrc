@@ -52,3 +52,9 @@ fi
 
 
 alias luamake=/home/npchitman/build_tmp/lua-language-server/3rd/luamake/luamake
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/npchitman/build_tmp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/npchitman/build_tmp/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/npchitman/build_tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/npchitman/build_tmp/google-cloud-sdk/completion.zsh.inc'; fi

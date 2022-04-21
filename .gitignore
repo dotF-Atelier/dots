@@ -133,3 +133,9 @@ network/
 .config/steam-tui/
 .cert/
 note/
+.boto
+.config/gcloud/
+.config/zsh/.zshrc.backup
+.gsutil/
+OneDrive/
+.config/rclone/rclone.conf
