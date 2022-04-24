@@ -86,7 +86,7 @@
 
 ;; lsp
 ;; clangd
-;; (setq company-idle-delay 0.01)
+(setq company-idle-delay 0.01)
 (setq lsp-headerline-breadcrumb-enable t)
 (setq lsp-log-io t)
 (setq lsp-clients-clangd-args '("-j=16"
@@ -103,9 +103,14 @@
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
 ;; prevent load project from home directory
-(after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
+;; (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 (setq projectile-ignored-projects '("$HOME"))
+
+(after! projectile
+  (nconc projectile-globally-ignored-directories
+         '(".stack-work" "node_modules" ".local" "3rdparty")))
+
 ;; (setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
 
 ;; icons scale

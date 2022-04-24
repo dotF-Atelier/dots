@@ -30,8 +30,8 @@ bspc rule -a mpv                desktop='^1' state=floating follow=on
 bspc rule -a feh                state=floating follow=on
 bspc rule -a Tilda              state=floating floating=on focus=on sticky=on
 bspc rule -a Demo               state=floating floating=on focus=on sticky=on
-bspc rule -a Microbench         state=floating floating=on focus=on sticky=on
-bspc rule -a ShaderBench        state=floating floating=on focus=on sticky=on
+bspc rule -a Microbench         desktop='^3' state=floating floating=on focus=on sticky=on
+bspc rule -a ShaderBench        desktop='^3' state=floating floating=on focus=on sticky=on
 
 bspc monitor DisplayPort-0 -d TERM WEB CODE FILES
 bspc monitor HDMI-A-0 -d MEDIA EXTRA COMMUNI READ
