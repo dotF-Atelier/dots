@@ -142,3 +142,4 @@ OneDrive/
 .config/calibre/
 Documents/
 
+.config/nvim/plugin/
