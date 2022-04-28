@@ -13,4 +13,4 @@
 
 |[1](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/1.png)| [2](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/3.png)|
 |-------|----|
-|![pic](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/1.png)| ![pic](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/3.png|
+|![pic](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/1.png)| ![pic](https://raw.githubusercontent.com/K1ngst0m/assets_dir/master/.github/dotfiles/3.png)|
