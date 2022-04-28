@@ -307,8 +307,36 @@ net-mail/mu emacs
 app-text/zathura-meta cb pdf
 sys-libs/zlib-ng zlib
 media-libs/imgui glfw freetype
-x11-libs/gtk+:3 wayland
+x11-libs/gtk+:3 -wayland
 # required by mail-client/thunderbird-91.8.1::gentoo[system-libvpx]
 # required by thunderbird (argument)
 >=media-libs/libvpx-1.11.0 postproc
 media-fonts/fontawesome ttf X
+dev-util/cmake doc emacs
+# required by dev-texlive/texlive-xetex-2021-r1::gentoo
+# required by dev-texlive/texlive-formatsextra-2021::gentoo
+# required by app-text/texlive-2021::gentoo[-extra,xml]
+# required by texlive (argument)
+>=app-text/texlive-core-2021-r1 xetex
+# required by dev-python/wxpython-4.0.7-r1::gentoo
+# required by dev-python/matplotlib-3.5.1::gentoo[-python_targets_python3_8,python_targets_python3_9,wxwidgets,-test]
+# required by dev-python/matplotlib-inline-0.1.3-r1::gentoo
+# required by dev-python/ipython-8.2.0::gentoo
+# required by dev-python/qtconsole-5.3.0::gentoo
+# required by dev-python/jupyter-1.0.0-r4::gentoo
+# required by jupyter (argument)
+>=x11-libs/wxGTK-3.0.5.1 gstreamer
+# required by dev-python/pyzmq-22.1.0::gentoo[-test]
+# required by dev-python/notebook-6.4.11::gentoo
+# required by dev-python/widgetsnbextension-3.6.0::gentoo
+# required by dev-python/ipywidgets-7.7.0::gentoo
+# required by dev-python/jupyter-1.0.0-r4::gentoo
+# required by jupyter (argument)
+>=net-libs/zeromq-4.3.4-r1 drafts
+# required by dev-python/qtconsole-5.3.0::gentoo
+# required by dev-python/ipython-8.2.0::gentoo[qt5]
+# required by dev-python/jupyter_console-6.4.3::gentoo
+# required by dev-python/jupyter-1.0.0-r4::gentoo
+# required by jupyter (argument)
+>=dev-python/QtPy-2.0.1 printsupport
+media-video/ffmpeg vpx

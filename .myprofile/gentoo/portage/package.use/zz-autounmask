@@ -307,7 +307,6 @@ net-mail/mu emacs
 app-text/zathura-meta cb pdf
 sys-libs/zlib-ng zlib
 media-libs/imgui glfw freetype
-x11-libs/gtk+:3 wayland
 # required by mail-client/thunderbird-91.8.1::gentoo[system-libvpx]
 # required by thunderbird (argument)
 >=media-libs/libvpx-1.11.0 postproc
@@ -339,3 +338,4 @@ dev-util/cmake doc emacs
 # required by dev-python/jupyter-1.0.0-r4::gentoo
 # required by jupyter (argument)
 >=dev-python/QtPy-2.0.1 printsupport
+media-video/ffmpeg vpx
