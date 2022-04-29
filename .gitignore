@@ -141,5 +141,10 @@ OneDrive/
 .config/rclone/rclone.conf
 .config/calibre/
 Documents/
-
 .config/nvim/plugin/
+.cmake/
+.config/lutris/
+.config/qBittorrent/
+.gnuplot_history
+
+Music
