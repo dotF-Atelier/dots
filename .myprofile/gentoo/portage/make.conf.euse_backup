@@ -18,15 +18,15 @@ PKGDIR="/var/cache/binpkgs"
 LC_MESSAGES=C
 
 # How many parallel compiliations should occur when installing packages
-MAKEOPTS="-j17"
-EMERGE_DEFAULT_OPTS="--jobs=16 --load-average=14.4"
+MAKEOPTS="-j16"
+EMERGE_DEFAULT_OPTS="--jobs=16 --load-average=10"
 # enable distcc
 # FEATURES="distcc"
 # CCACHE_DIR="/var/cache/ccache"
 
 # USE flags
 USE="X clang -systemd xinerama pulseaudio alsa -nvidia vulkan -doc -h \
-     udev -wayland"
+     udev -wayland ibus"
 
 # Graphics Cards
 VIDEO_CARDS="amdgpu radeonsi"
