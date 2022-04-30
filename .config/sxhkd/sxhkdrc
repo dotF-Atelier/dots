@@ -115,6 +115,10 @@ super + {_,shift + }{1-8}
 # super + ctrl + {_,shift + }{1-4}
 # 	bspc {desktop -f,node -d} '^{1-4}'
 
+# dunst
+super + shift + x
+	dunstctl close
+
 #
 # preselect
 #

@@ -5809,7 +5809,7 @@ translate(){
 	# echo
 	translation_text=$(eval "$translate_cmd \"$t_source\"")
 	echo "$translation_text"
-	notify-send " TRANSLATION" "\======================\n$translation_text" --icon="$HOME"/.local/share/icons/doom.png -u critical
+	notify-send " TRANSLATION" "\======================\n$translation_text"  -u critical # --icon="$HOME"/.local/share/icons/doom.png
 	echo
 	echo "=============="
 }
