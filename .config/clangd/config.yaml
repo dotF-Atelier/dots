@@ -1,0 +1,22 @@
+CompileFlags:
+  Add: [-xc++, -Wall, -Wno-unused-variable]
+  # Remove extra warnings specified in compile commands.
+  # Single value is also acceptable, same as "Remove: [-mabi]"
+  Compiler: g++
+  Remove: [-fvar-tracking,-fvar-tracking-assignments]
+Diagnostics:
+  # Tweak Clang-Tidy checks.
+  ClangTidy:
+    Add: [clang-analyzer*, performance*, modernize*, readability*]
+    Remove: [
+      clang-analyzer-osx*,
+      readability-identifier-length,
+      readability-braces-around-statements,
+      readability-implicit-bool-conversion,
+      readability-isolate-declaration,
+      modernize-use-trailing-return-type,
+      modernize-use-nodiscard,
+      readability-redundant-access-specifiers,
+      readability-function-cognitive-complexity,
+      readability-magic-numbers
+    ]

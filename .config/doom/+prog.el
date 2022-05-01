@@ -5,7 +5,7 @@
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
 
 (after! company
-  (setq company-idle-delay 0.2)
+  (setq company-idle-delay 0.1)
   (setq company-format-margin-function #'company-detect-icons-margin))
 
 (after! realgud (advice-remove #'realgud:terminate #'+debugger--cleanup-after-realgud-a))
@@ -13,6 +13,12 @@
 (add-to-list 'auto-mode-alist '("\\.inl\\'" . +cc-c-c++-objc-mode))
 (add-to-list 'auto-mode-alist '("\\.inc\\'" . +cc-c-c++-objc-mode))
 
+(flycheck-clang-tidy-setup)
+(use-package! flycheck-clang-tidy
+  :after flycheck
+  :hook
+  (flycheck-mode . flycheck-clang-tidy-setup)
+  )
 
 ;; lsp
 (setq +format-with-lsp nil)
@@ -42,16 +48,15 @@
                  ))
     (push dir lsp-file-watch-ignored-directories))
   (setq lsp-clients-clangd-args '("-j=8"
-                                  ;; "--all-scopes-completion"
+                                  "--all-scopes-completion"
                                   "--clang-tidy"
                                   "--enable-config"
                                   "--background-index"
-                                  "--completion-style=detailed"
+                                  "--completion-style=bundled"
                                   "--pch-storage=memory"
                                   "--header-insertion=never"
-                                  ;; "--log=verbose"
+                                  "--log=verbose"
                                   "--header-insertion-decorators=0"
-                                  ;; "--clang-tidy-checks='-*,clang-analyzer-*,readability-*,modernize-*,-clang-analyzer-osx*,-readability-identifier-length,-readability-braces-around-statements'"
                                   ))
 )
 

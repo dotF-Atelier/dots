@@ -126,7 +126,6 @@ core
 network/
 .clangd
 .config/JetBrains/
-.config/clangd/
 .java/
 .taichi/
 .lldb/
