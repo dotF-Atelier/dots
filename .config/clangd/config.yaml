@@ -18,5 +18,6 @@ Diagnostics:
       modernize-use-nodiscard,
       readability-redundant-access-specifiers,
       readability-function-cognitive-complexity,
-      readability-magic-numbers
+      readability-magic-numbers,
+      readability-uppercase-literal-suffix,
     ]
