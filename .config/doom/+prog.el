@@ -13,13 +13,6 @@
 (add-to-list 'auto-mode-alist '("\\.inl\\'" . +cc-c-c++-objc-mode))
 (add-to-list 'auto-mode-alist '("\\.inc\\'" . +cc-c-c++-objc-mode))
 
-(flycheck-clang-tidy-setup)
-(use-package! flycheck-clang-tidy
-  :after flycheck
-  :hook
-  (flycheck-mode . flycheck-clang-tidy-setup)
-  )
-
 ;; lsp
 (setq +format-with-lsp nil)
 (after! lsp-mode
