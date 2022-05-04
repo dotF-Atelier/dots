@@ -1,11 +1,10 @@
-# -*- mode: snippet -*-
+# key: my-article
 # name: my-article
-# key:  my-article
 # --
-
-#+TITLE: ${1:TITLE}
-#+AUTHOR: ${2:AUTHOR}
-#+EMAIL:  ${3:EMAIL}
+#+TITLE: ${THE APHRODITE EQUATION}
+#+AUTHOR: ${kingstom}
+#+EMAIL:  ${kst@gmail.com}
+#+DATE: ${2000-03-24 Fri}
 #+OPTIONS: toc:nil
 #+LATEX_CLASS: article
 #+LATEX_CLASS_OPTIONS: [12pt]
@@ -27,30 +26,37 @@
 \glsdisablehyper
 
 % acronyms example
-\newacronym{${4:acronym}}{${5:Acronym}}{${6:description}}
+\newacronym{${gpu}}{${GPU}}{${Graphics Processing Unit}}
 
 %% mathematical symbol example
-\newglossaryentry{${7:gls}}{
-  name={${8:gls_name}},
-  symbol={${9:gls_symbol}},
-  description={${10:description}}
+\newglossaryentry{${aph}}{
+  name={${aphrodite}},
+  symbol={${\(aphrodite_{kst}\)}},
+  description={${kukugo}}
 }
 
 #+END_EXPORT
 
 * Abstract
+${this is a Abstract content}
 \newpage
 * Introduction
+${this is a Introduction content}
 \newpage
 * Methods
+${this is a Methods content}
 \newpage
 * Results
+${this is a Results content}
 \newpage
 * Discussion
+${this is a Discussion content}
 \newpage
 * Conclusion
+${this is a Conclusion content}
 \newpage
 * Acknowledgments
+${this is a Acknowledgements content}
 
 #+BEGIN_EXPORT latex
   \bibliographystyle{unsrt}
