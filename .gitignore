@@ -145,5 +145,11 @@ Documents/
 .config/lutris/
 .config/qBittorrent/
 .gnuplot_history
-
 Music
+.library.bib
+.pfl.info
+.zotero/
+Zotero/
+.config/LanguageTool/
+.languagetool.cfg
+
