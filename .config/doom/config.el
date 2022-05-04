@@ -6,7 +6,7 @@
 (load! "+key")
 (load! "+misc")
 
-(setq user-full-name "Kingstom"
+(setq user-full-name "Kingstom Chen"
       user-mail-address "kingstom.chen@gmail.com")
 
 (setq-default fill-column 120

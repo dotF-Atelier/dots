@@ -1,0 +1,61 @@
+# -*- mode: snippet -*-
+# name: my-article
+# key:  my-article
+# --
+
+#+TITLE: ${1:TITLE}
+#+AUTHOR: ${2:AUTHOR}
+#+EMAIL:  ${3:EMAIL}
+#+OPTIONS: toc:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \newfloat{scheme}{h}{sch}
+#+LATEX_HEADER: \floatname{scheme}{Scheme}
+#+LATEX_HEADER: \usepackage[scaled]{libertine}
+#+LATEX_HEADER: \usepackage[sort&compress]{natbib}
+#+LATEX_HEADER: \usepackage{siunitx}
+#+LATEX_HEADER: \usepackage{glossaries}
+#+LATEX_HEADER: \usepackage{chemmacros}
+#+LATEX_HEADER: \DeclareSIUnit\molar{\mole\per\cubic\deci\metre}
+#+LATEX_HEADER: \DeclareSIUnit\Molar{\textsc{M}}
+
+#+BEGIN_EXPORT latex
+
+% no hyper links
+\glsdisablehyper
+
+% acronyms example
+\newacronym{${4:acronym}}{${5:Acronym}}{${6:description}}
+
+%% mathematical symbol example
+\newglossaryentry{${7:gls}}{
+  name={${8:gls_name}},
+  symbol={${9:gls_symbol}},
+  description={${10:description}}
+}
+
+#+END_EXPORT
+
+* Abstract
+\newpage
+* Introduction
+\newpage
+* Methods
+\newpage
+* Results
+\newpage
+* Discussion
+\newpage
+* Conclusion
+\newpage
+* Acknowledgments
+
+#+BEGIN_EXPORT latex
+  \bibliographystyle{unsrt}
+  \bibliography{paper}
+#+END_EXPORT
+
+
+\newpage

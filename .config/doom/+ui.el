@@ -5,7 +5,8 @@
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-ayu-mirage)
 (setq doom-theme 'doom-horizon)
-
+;; doom-mode-line stuff
+(setq doom-modeline-enable-word-count t)
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
@@ -35,7 +36,7 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 ;; (setq display-line-numbers t)
 ;; (setq doom-line-numbers-style 'relative)
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 ;; icons scale
 (setq inhibit-compacting-font-caches t
