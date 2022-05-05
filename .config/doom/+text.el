@@ -4,8 +4,8 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/workspace/notes/"
-      org-noter-notes-search-path '("~/workspace/notes/noter/")
       org-preview-latex-default-process 'dvisvgm)
+
 
 ;; Set up org-mode export stuff
 (after! org
@@ -13,38 +13,14 @@
   (setq org-latex-pdf-process
         '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
 
-  ;; noter
-  (after! org-noter
-    (setq
-     ;; org-noter-notes-search-path "~/workspace/notes/org-roam/references/"
-     org-noter-hide-other nil
-     org-noter-separate-notes-from-heading t
-     org-noter-always-create-frame nil)
-    (map!
-     :map org-noter-doc-mode-map
-     :leader
-     :desc "Insert note"
-     "m i" #'org-noter-insert-note
-     :desc "Insert precise note"
-     "m p" #'org-noter-insert-precise-note
-     :desc "Go to previous note"
-     "m k" #'org-noter-sync-prev-note
-     :desc "Go to next note"
-     "m j" #'org-noter-sync-next-note
-     :desc "Create skeleton"
-     "m s" #'org-noter-create-skeleton
-     :desc "Kill session"
-     "m q" #'org-noter-kill-session
-     )
-    )
 
   ;; Set up org-ref stuff
   (use-package! org-ref
     :custom
-    (bibtex-completion-bibliography '("~/.library.bib"))
-    (reftex-default-bibliography '("~/.library.bib"))
+    (bibtex-completion-bibliography '("~/workspace/notes/library.bib"))
+    (reftex-default-bibliography '("~/workspace/notes/library.bib"))
     (bibtex-completion-pdf-field "file")
-    ;; (org-ref-default-bibliography "~/.library.bib")
+    ;; (org-ref-default-bibliography "~/workspace/notes/library.bib")
     (defun my/org-ref-open-pdf-at-point ()
       "Open the pdf for bibtex key under point if it exists."
       (interactive)
@@ -67,12 +43,36 @@
     )
   )
 
+;; noter
+(after! org-noter
+  (setq
+   org-noter-hide-other nil
+   org-noter-separate-notes-from-heading t
+   org-noter-always-create-frame nil)
+  (map!
+   :map org-noter-doc-mode-map
+   :leader
+   :desc "Insert note"
+   "m i" #'org-noter-insert-note
+   :desc "Insert precise note"
+   "m p" #'org-noter-insert-precise-note
+   :desc "Go to previous note"
+   "m k" #'org-noter-sync-prev-note
+   :desc "Go to next note"
+   "m j" #'org-noter-sync-next-note
+   :desc "Create skeleton"
+   "m s" #'org-noter-create-skeleton
+   :desc "Kill session"
+   "m q" #'org-noter-kill-session
+   )
+  )
+
 ;; helm-bibtex related stuff
 (after! helm
   (use-package! helm-bibtex
     :custom
-    (bibtex-completion-bibliography '("~/.library.bib"))
-    (reftex-default-bibliography '("~/.library.bib"))
+    (bibtex-completion-bibliography '("~/workspace/notes/library.bib"))
+    (reftex-default-bibliography '("~/workspace/notes/library.bib"))
     (bibtex-completion-pdf-field "file")
     :hook (Tex . (lambda () (define-key Tex-mode-map "\C-ch" 'helm-bibtex))))
   (map! :leader
@@ -90,7 +90,16 @@
   ;; This means that pdfs are fitted to width by default when you open them
   (setq-default pdf-view-display-size 'fit-width)
   :custom
-  (pdf-annot-activate-created-annotations t "automatically annotate highlights"))
+  (pdf-annot-activate-created-annotations t "automatically annotate highlights")
+  (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+        TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
+        TeX-source-correlate-start-server t)
+
+  (add-hook 'TeX-after-compilation-finished-functions
+            #'TeX-revert-document-buffer)
+  (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+
+  )
 
 ;; ;; org-roam-bibtex stuff
 ;; (use-package! org-roam-bibtex
