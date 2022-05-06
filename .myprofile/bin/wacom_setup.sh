@@ -1,8 +1,13 @@
 #!/bin/bash
 
 # map monitor
-xsetwacom --set "Wacom Intuos Pro M Pen stylus" MapToOutput HDMI-A-0
-# xsetwacom --set "Wacom Intuos Pro M Pen stylus" MapToOutput DisplayPort-0
+if [ $1 == '1' ];then
+    xsetwacom --set "Wacom Intuos Pro M Pen stylus" MapToOutput HDMI-A-0
+elif [ $1 == '2' ];then
+    xsetwacom --set "Wacom Intuos Pro M Pen stylus" MapToOutput DisplayPort-0
+else
+    xsetwacom --set "Wacom Intuos Pro M Pen stylus" MapToOutput "$1"
+fi
 
 # turn Ring off
 xsetwacom --set "Wacom Intuos Pro M Pad pad" 'AbsWheelUp' 'button 0'

@@ -13,4 +13,4 @@ xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144.00 --output HDMI-A-0 -
 
 feh --bg-fill $HOME/Picture/wallpaper/sandworm.jpg --bg-fill $HOME/Picture/wallpaper/sandworm.jpg
 
-sh $MYPROFILE/bin/wacom_setup.sh
+sh $MYPROFILE/bin/wacom_setup.sh 1

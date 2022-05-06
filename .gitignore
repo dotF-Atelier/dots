@@ -152,4 +152,5 @@ Music
 Zotero/
 .config/LanguageTool/
 .languagetool.cfg
-
+.config/gcolor3/
+.config/gpick/
