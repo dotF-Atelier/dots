@@ -46,6 +46,7 @@
 ;; noter
 (after! org-noter
   (setq
+   org-noter-notes-search-path '("~/workspace/notes/noter")
    org-noter-hide-other nil
    org-noter-separate-notes-from-heading t
    org-noter-always-create-frame nil)
