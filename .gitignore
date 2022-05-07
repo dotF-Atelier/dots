@@ -153,4 +153,6 @@ Zotero/
 .config/LanguageTool/
 .languagetool.cfg
 .config/gcolor3/
+.config/xarchiver/
 .config/gpick/
+.config/doom/custom.el

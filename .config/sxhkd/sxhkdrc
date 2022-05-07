@@ -25,7 +25,7 @@ ctrl + alt + a
     flameshot gui
 # translate with screenshot
 ctrl + alt + w
-	flameshot gui && xclip -o -sel clip -t image/png > /tmp/test.png && translator "$(tesseract /tmp/test.png stdout)"
+	flameshot gui && xclip -o -sel clip -t image/png > /tmp/test.png && proxychains -q translator "$(tesseract /tmp/test.png stdout)"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -64,7 +64,7 @@ super + b
 # translate select text
 alt + w
 # super + ctrl + Tab
-	translator "`xclip -o`"
+	proxychains -q translator "`xclip -o`"
 
 #
 # state/flags

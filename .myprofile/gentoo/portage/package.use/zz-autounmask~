@@ -360,3 +360,4 @@ app-text/pandoc hscolour
 # required by app-portage/pfl-3.2-r2::gentoo[network-cron]
 # required by pfl (argument)
 >=sys-apps/util-linux-2.38 caps
+sys-apps/xdg-desktop-portal screencast
