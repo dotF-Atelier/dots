@@ -89,7 +89,9 @@
   :config
   (pdf-tools-install)
   ;; This means that pdfs are fitted to width by default when you open them
-  (setq-default pdf-view-display-size 'fit-width)
+  (setq-default pdf-view-display-size 'fit-width
+                pdf-view-auto-slice-minor-mode t
+                )
   :custom
   (pdf-annot-activate-created-annotations t "automatically annotate highlights")
   (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
