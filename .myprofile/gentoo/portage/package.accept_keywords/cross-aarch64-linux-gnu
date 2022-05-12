@@ -1,0 +1,5 @@
+cross-aarch64-linux-gnu/binutils arm64 -amd64 -~amd64
+cross-aarch64-linux-gnu/gcc arm64 -amd64 -~amd64
+cross-aarch64-linux-gnu/linux-headers arm64 -amd64 -~amd64
+cross-aarch64-linux-gnu/glibc arm64 -amd64 -~amd64
+cross-aarch64-linux-gnu/gdb arm64 ~arm64 -amd64 -~amd64

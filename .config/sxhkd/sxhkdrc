@@ -20,6 +20,9 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute 0 toggle
 
+alt + q
+    tdrop -a -w 1100 -h 550 -x 800 -y 520 -s "---" kitty
+
 # screenshot keybindings
 ctrl + alt + a
     flameshot gui

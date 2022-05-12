@@ -85,24 +85,24 @@
   )
 
 ;; This is to use pdf-tools instead of doc-viewer
-(use-package! pdf-tools
-  :config
-  (pdf-tools-install)
-  ;; This means that pdfs are fitted to width by default when you open them
-  (setq-default pdf-view-display-size 'fit-width
-                pdf-view-auto-slice-minor-mode t
-                )
-  :custom
-  (pdf-annot-activate-created-annotations t "automatically annotate highlights")
-  (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
-        TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
-        TeX-source-correlate-start-server t)
+;; (use-package! pdf-tools
+;;   :config
+;;   (pdf-tools-install)
+;;   ;; This means that pdfs are fitted to width by default when you open them
+;;   (setq-default pdf-view-display-size 'fit-width
+;;                 pdf-view-auto-slice-minor-mode t
+;;                 )
+;;   :custom
+;;   (pdf-annot-activate-created-annotations t "automatically annotate highlights")
+;;   (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+;;         TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
+;;         TeX-source-correlate-start-server t)
 
-  (add-hook 'TeX-after-compilation-finished-functions
-            #'TeX-revert-document-buffer)
-  (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+;;   (add-hook 'TeX-after-compilation-finished-functions
+;;             #'TeX-revert-document-buffer)
+;;   (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
-  )
+;;   )
 
 ;; ;; org-roam-bibtex stuff
 ;; (use-package! org-roam-bibtex

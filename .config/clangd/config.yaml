@@ -10,6 +10,7 @@ Diagnostics:
     Add: [clang-analyzer*, performance*, modernize*, readability*]
     Remove: [
       clang-analyzer-osx*,
+      modernize-avoid-c-arrays,
       readability-identifier-length,
       readability-braces-around-statements,
       readability-implicit-bool-conversion,

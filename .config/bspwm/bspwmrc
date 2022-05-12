@@ -25,12 +25,13 @@ bspc config single_monocle          true
 bspc rule -a Code            	desktop='^7'
 bspc rule -a Telegram           desktop='^7'
 bspc rule -a discord            desktop='^7'
-bspc rule -a Zathura 		state=tiled
-bspc rule -a Emacs 		    state=tiled
+bspc rule -a Zathura 		    state=tiled
+bspc rule -a Emacs 		        state=tiled
 bspc rule -a mpv                desktop='^5' state=floating follow=on
 bspc rule -a feh                state=floating follow=on
-bspc rule -a Gpick                state=floating follow=on
+bspc rule -a Gpick              state=floating follow=on
 bspc rule -a Tilda              state=floating floating=on focus=on sticky=on
+# bspc rule -a Alacritty          state=floating floating=on focus=on sticky=on
 bspc rule -a Demo               state=floating floating=on focus=on sticky=on
 bspc rule -a Microbench         desktop='^3' state=floating floating=on focus=on sticky=on
 bspc rule -a ShaderBench        desktop='^3' state=floating floating=on focus=on sticky=on
