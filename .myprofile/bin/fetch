@@ -33,13 +33,15 @@ repeat_by_len () {
   done
 }
 
+
 printf '%b' "
-${bold}${blue}     .vir.      ${end}${bold}${blue}${user}${cyan}@${purple}$(cat /etc/hostname)${end}
-${bold}${blue}  .d\$\$\$\$\$\$b.    ${end}${green}$(repeat_by_len "${user}@$(cat /etc/hostname)" "─")
-${bold}${blue}  \$\$\$\$( )\$\$\$b   ${end}${bold}${purple}\uf30d  ${blue}os${green} ${magenta} ${cyan}${distro}${end}
-${bold}${blue}  Q\$\$\$\$\$\$\$\$\$\$B  ${end}${bold}${purple} ${blue}sh${green} ${magenta} ${cyan}${shell}${end}
-${bold}${blue}    \"\$\$\$\$\$\$\$P   ${end}${bold}${purple}  ${blue}wm${green} ${magenta} ${cyan}${wm}${end}
-${bold}${blue}   d\$\$\$\$\$\$P\"    ${end}${bold}${purple}  ${blue}kr${green} ${magenta} ${cyan}${kernel}${end}
-${bold}${blue}  \$\$\$\$\$\$\$P      ${end}${bold}${purple}\uf8d6  ${blue}pk${green} ${magenta} ${cyan}${packages}${end}
-${bold}${blue}  \`Q\$\$P\"        ${end}${bold}${purple}  ${blue}ram ${green} ${magenta}${cyan}${ram}${end}
+${bold}${red}     .vir.      ${end}${bold}${blue}${user}${cyan}@${purple}$(cat /etc/conf.d/hostname)${end}
+${bold}${red}  .d\$\$\$\$\$\$b.    ${end}${green}$(repeat_by_len "${user}@$(cat /etc/conf.d/hostname)" "─")
+${bold}${green}  \$\$\$\$( )\$\$\$b   ${end}${bold}${purple}\uf30d  ${blue}os   ${green}   ${magenta} ${cyan}${distro}${end}
+${bold}${red}  Q\$\$\$\$\$\$\$\$\$\$B  ${end}${bold}${purple} ${blue}sh   ${green}   ${magenta} ${cyan}${shell}${end}
+${bold}${red}    \"\$\$\$\$\$\$\$P   ${end}${bold}${purple}  ${blue}wm   ${green}   ${magenta} ${cyan}${wm}${end}
+${bold}${red}   d\$\$\$\$\$\$P\"    ${end}${bold}${purple}  ${blue}kr   ${green}   ${magenta} ${cyan}${kernel}${end}
+${bold}${red}  \$\$\$\$\$\$\$P      ${end}${bold}${purple}\uf8d6  ${blue}pk   ${green}   ${magenta} ${cyan}${packages}${end}
+${bold}${red}  \`Q\$\$P\"        ${end}${bold}${purple}  ${blue}ram   ${green}   ${magenta}${cyan}${ram}${end}
+
 "
