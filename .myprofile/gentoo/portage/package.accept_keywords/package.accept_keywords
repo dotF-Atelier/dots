@@ -4,3 +4,5 @@
 =app-editors/neovim-9999 **
 # required by sys-libs/zlib-ng (argument)
 =sys-libs/zlib-ng-2.0.6 **
+# required by =gimp-2.99.10-r1 (argument)
+=media-gfx/gimp-2.99.10-r1 **

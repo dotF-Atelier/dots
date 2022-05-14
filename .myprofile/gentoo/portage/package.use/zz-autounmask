@@ -362,3 +362,12 @@ app-text/pandoc hscolour
 >=sys-apps/util-linux-2.38 caps
 sys-apps/xdg-desktop-portal screencast
 sys-boot/grub doc
+# required by media-libs/gegl-0.4.36-r1::gentoo
+# required by media-gfx/gimp-2.99.10-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/babl-0.1.90-r1 introspection
+# required by media-gfx/gimp-2.99.10-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/gegl-0.4.36-r1 introspection
