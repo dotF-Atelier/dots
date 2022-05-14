@@ -97,7 +97,7 @@ def draw_tab(
     is_last: bool,
     extra_data: ExtraData,
 ) -> int:
-    _draw_icon(screen, index, symbol=" LEI ")
+    _draw_icon(screen, index, symbol=" \uf30d ")
     _draw_left_status(
         draw_data,
         screen,

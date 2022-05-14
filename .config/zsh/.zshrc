@@ -15,7 +15,7 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 source $ZDOTDIR/aliases.zsh
 
 # prompt
-PROMPT='%(?.%F{green} .%F{red} )%f %B%F{240}%1~%f%b -> '
+PROMPT="%(?.%F{white} .%F{red} )%f %B%F{240}%1~%f%b -> "
 RPROMPT='%(?.%F .%F{red} %?)'
 
 # auto completion
