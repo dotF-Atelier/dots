@@ -4,6 +4,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+export XDG_STATE_STATE="$XDG_CONFIG_HOME/local/state"
 
 ## text editor
 export EDITOR="nvim"
@@ -37,13 +38,4 @@ export MYMUSIC="/mnt/ssd1/nfs_export/nfs_data/music"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
-# proxy
-# export http_proxy='http://192.168.1.3:7893'
-# export https_proxy='http://192.168.1.3:7893'
-# export all_proxy='http://192.168.1.3:7893'
-
-# ps ca | grep xinit > /dev/null
-# if [ $? -ne 0 ]; then
-#  startx ~/.config/X11/xinitrc
-# fi
-
+export BAT_STYLE="plain"
