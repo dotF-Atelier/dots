@@ -15,7 +15,7 @@ def calc_draw_spaces(*args) -> int:
     return length
 
 
-def _draw_icon(screen: Screen, index: int, symbol: str = " LEI ") -> int:
+def _draw_icon(screen: Screen, index: int, symbol: str = "   \uf30d   ") -> int:
     if index != 1:
         return
 
@@ -97,7 +97,7 @@ def draw_tab(
     is_last: bool,
     extra_data: ExtraData,
 ) -> int:
-    _draw_icon(screen, index, symbol=" \uf30d ")
+    _draw_icon(screen, index, symbol="   \uf30d   ")
     _draw_left_status(
         draw_data,
         screen,

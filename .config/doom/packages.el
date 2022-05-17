@@ -12,6 +12,11 @@
 (package! org-ref)
 (package! org-roam-bibtex)
 (package! org-roam-ui)
+(package! nerd-fonts
+  :recipe (:host github :repo "twlz0ne/nerd-fonts.el"))
+(package! all-the-icons-nerd-fonts
+  :recipe (:host github :repo "mohkale/all-the-icons-nerd-fonts"))
+
 
 ;(package! this-package
 ;  :recipe (:host github :repo "username/repo"

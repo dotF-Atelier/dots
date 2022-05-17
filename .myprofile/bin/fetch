@@ -4,6 +4,7 @@
 user="${USER}"
 shell="$(basename ${SHELL})"
 distro=$(. /etc/os-release ; echo "$ID")
+hn="$(hostname)"
 wm="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 kernel="$(uname -r | cut -d '-' -f1)"
 packages="$(eix-installed -a all | wc -l)"
@@ -35,8 +36,8 @@ repeat_by_len () {
 
 
 printf '%b' "
-${bold}${red}     .vir.      ${end}${bold}${blue}${user}${cyan}@${purple}$(cat /etc/conf.d/hostname)${end}
-${bold}${red}  .d\$\$\$\$\$\$b.    ${end}${green}$(repeat_by_len "${user}@$(cat /etc/conf.d/hostname)" "─")
+${bold}${green}     .vir.      ${end}${bold}${blue}${user}${cyan}@${purple}${hn}${end}
+${bold}${green}  .d\$\$\$\$\$\$b.    ${end}${green}$(repeat_by_len "${user}@${hn}" "─")
 ${bold}${green}  \$\$\$\$( )\$\$\$b   ${end}${bold}${purple}\uf30d  ${blue}os   ${green}   ${magenta} ${cyan}${distro}${end}
 ${bold}${red}  Q\$\$\$\$\$\$\$\$\$\$B  ${end}${bold}${purple} ${blue}sh   ${green}   ${magenta} ${cyan}${shell}${end}
 ${bold}${red}    \"\$\$\$\$\$\$\$P   ${end}${bold}${purple}  ${blue}wm   ${green}   ${magenta} ${cyan}${wm}${end}

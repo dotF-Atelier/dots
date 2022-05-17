@@ -18,7 +18,7 @@
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'semi-light)
-(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'normal)
+(setq doom-font (font-spec :family "Fantasque Sans Mono Nerd Font" :size 22 :weight 'normal)
       doom-variable-pitch-font (font-spec :family "arial" :size 19))
 ;; Set font for chinese characters
 ;; Font should be twice the width of asci chars so that org tables align
@@ -39,5 +39,10 @@
 (setq display-line-numbers-type 'relative)
 
 ;; icons scale
+(after! :all-the-icons-nerd-fonts
+  :config
+  (all-the-icons-nerd-fonts-prefer)
+  )
+
 (setq inhibit-compacting-font-caches t
       all-the-icons-scale-factor 0.9)
