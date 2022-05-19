@@ -19,17 +19,17 @@ LC_MESSAGES=C
 
 # How many parallel compiliations should occur when installing packages
 MAKEOPTS="-j16"
-EMERGE_DEFAULT_OPTS="--jobs=16 --load-average=10"
+EMERGE_DEFAULT_OPTS="--jobs=16 --load-average=8"
 # enable distcc
 # FEATURES="distcc"
 # CCACHE_DIR="/var/cache/ccache"
 
 # USE flags
 USE="X clang -systemd xinerama pulseaudio alsa -nvidia vulkan -doc -h \
-     udev -wayland ibus"
+     udev -wayland ibus lm_sensors vaapi"
 
 # Graphics Cards
-VIDEO_CARDS="amdgpu radeonsi"
+VIDEO_CARDS="amdgpu radeonsi RADV"
 
 ## (For mouse, keyboard, and Synaptics touchpad support)
 INPUT_DEVICES="libinput wacom"
