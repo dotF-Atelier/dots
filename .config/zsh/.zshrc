@@ -13,7 +13,10 @@ shpwd() {
     echo ${${:-/${(j:/:)${(M)${(s:/:)${(D)PWD:h}}#(|.)[^.]}}/${PWD:t}}//\/~/\~}
 }
 # prompt
-PROMPT='%(?.%F{white} .%F{red}%B%?%b) %f%{%B%F{240}$(shpwd)%f%b%}  '
+PROMPT="%(?.%F{white} .%F{red} )%f %B%F{240}%1~%f%b "
+# PROMPT="%(?.%F{white} .%F{red} )%f %B%F{240}$(shpwd)%f%b  "
+RPROMPT='%(?.%F .%F{red} %?)'
+# kPROMPT='%n@%m:%{$()%}%# '
 
 # auto completion
 autoload -U compinit&& compinit

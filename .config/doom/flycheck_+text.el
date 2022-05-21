@@ -119,6 +119,15 @@
 ;; - tags ::
 ;; - keywords :: ${keywords}
 
+;; * Notes
+;; :PROPERTIES:
+;; :Custom_ID: ${citekey}
+;; :URL: ${url}
+;; :AUTHOR: ${author-or-editor}
+;; :NOTER_DOCUMENT: ${file}
+;; :NOTER_PAGE:
+;; :END:")))
+
 ;; ;; org-roam related things
 ;; (after! org-roam
 ;;   (setq org-roam-directory "~/workspace/notes/org-roam")

@@ -6,3 +6,5 @@
 =sys-libs/zlib-ng-2.0.6 **
 # required by =gimp-2.99.10-r1 (argument)
 =media-gfx/gimp-2.99.10-r1 **
+# required by =app-text/poppler-9999 (argument)
+=app-text/poppler-9999 **

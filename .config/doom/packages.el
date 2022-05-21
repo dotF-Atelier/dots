@@ -12,6 +12,8 @@
 (package! org-ref)
 (package! org-roam-bibtex)
 (package! org-roam-ui)
+(package! pdf-tools
+  :recipe (:host github :repo "vedang/pdf-tools"))
 (package! nerd-fonts
   :recipe (:host github :repo "twlz0ne/nerd-fonts.el"))
 (package! all-the-icons-nerd-fonts
