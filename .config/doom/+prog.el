@@ -90,3 +90,19 @@
          '(".stack-work" "node_modules" ".local" "3rdparty")))
 
 (setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
+
+(c-set-offset 'inline-open '0)
+(defun vlad-cc-style()
+  (c-set-style "linux")
+  (c-set-offset 'innamespace '0)
+  (c-set-offset 'inextern-lang '0)
+  (c-set-offset 'inline-open '0)
+  (c-set-offset 'label '*)
+  (c-set-offset 'case-label '*)
+  (c-set-offset 'access-label '/)
+  (setq c-basic-offset 4)
+  (setq tab-width 4)
+  (setq indent-tabs-mode nil)
+)
+
+(add-hook 'c++-mode-hook 'vlad-cc-style)

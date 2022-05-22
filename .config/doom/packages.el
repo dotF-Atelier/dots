@@ -19,7 +19,6 @@
 (package! all-the-icons-nerd-fonts
   :recipe (:host github :repo "mohkale/all-the-icons-nerd-fonts"))
 
-
 ;(package! this-package
 ;  :recipe (:host github :repo "username/repo"
 ;           :files ("some-file.el" "src/lisp/*.el")))
