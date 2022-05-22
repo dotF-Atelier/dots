@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+record(){
+    echo === start recording ===
+
+    recordmydesktop --no-sound --width $1 --height $2 -x $3 -y $4 2> /dev/null
+
+    echo === finish recording ===
+}
+
+# WxH+X+Y
+geometry=$(flameshot gui -g 2> /dev/null | tr "x" "+" | tr "+" " ")
+sleep 0.5
+record $geometry
