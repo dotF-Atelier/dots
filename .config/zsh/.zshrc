@@ -23,15 +23,6 @@ autoload -U compinit&& compinit
 _comp_options+=(globdots) # With hidden files
 source $ZDOTDIR/plugin/completion.zsh
 
-# if [[ -z $TMUX ]]; then
-#     # Fix issue where tmux creates duplicate path entries.
-#     source ~/.zshenv
-# fi
-# 
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   exec tmux
-# fi
-
 bindkey -e
 # source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh

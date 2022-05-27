@@ -23,7 +23,7 @@ export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 
-export TERMINAL="alacritty"                   # Maximum events in history file
+export TERMINAL="kitty"                   # Maximum events in history file
 
 # X11
 export MYXPATH="$XDG_CONFIG_HOME/X11"

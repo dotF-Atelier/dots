@@ -1,0 +1,67 @@
+# key: my-article
+# name: my-article
+# --
+#+TITLE: ${THE APHRODITE EQUATION}
+#+AUTHOR: ${kingstom}
+#+EMAIL:  ${kst@gmail.com}
+#+DATE: ${2000-03-24 Fri}
+#+OPTIONS: toc:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \newfloat{scheme}{h}{sch}
+#+LATEX_HEADER: \floatname{scheme}{Scheme}
+#+LATEX_HEADER: \usepackage[scaled]{libertine}
+#+LATEX_HEADER: \usepackage[sort&compress]{natbib}
+#+LATEX_HEADER: \usepackage{siunitx}
+#+LATEX_HEADER: \usepackage{glossaries}
+#+LATEX_HEADER: \usepackage{chemmacros}
+#+LATEX_HEADER: \DeclareSIUnit\molar{\mole\per\cubic\deci\metre}
+#+LATEX_HEADER: \DeclareSIUnit\Molar{\textsc{M}}
+
+#+BEGIN_EXPORT latex
+
+% no hyper links
+\glsdisablehyper
+
+% acronyms example
+\newacronym{${gpu}}{${GPU}}{${Graphics Processing Unit}}
+
+%% mathematical symbol example
+\newglossaryentry{${aph}}{
+  name={${aphrodite}},
+  symbol={${\(aphrodite_{kst}\)}},
+  description={${kukugo}}
+}
+
+#+END_EXPORT
+
+* Abstract
+${this is a Abstract content}
+\newpage
+* Introduction
+${this is a Introduction content}
+\newpage
+* Methods
+${this is a Methods content}
+\newpage
+* Results
+${this is a Results content}
+\newpage
+* Discussion
+${this is a Discussion content}
+\newpage
+* Conclusion
+${this is a Conclusion content}
+\newpage
+* Acknowledgments
+${this is a Acknowledgements content}
+
+#+BEGIN_EXPORT latex
+  \bibliographystyle{unsrt}
+  \bibliography{paper}
+#+END_EXPORT
+
+
+\newpage

@@ -21,14 +21,22 @@ bspc config borderless_monocle      true
 bspc config gapless_monocle         false
 bspc config single_monocle          true
 
-bspc rule -a Firefox        desktop='^2' follow=on
-bspc rule -a discord        desktop='^4'
-bspc rule -a mpv            desktop='^4' follow=on
-bspc rule -a feh            state=floating follow=on
-bspc rule -a Tilda          state=floating floating=on focus=on sticky=on border=off
-bspc rule -a Demo           state=floating floating=on focus=on sticky=on
+# bspc rule -a Google-chrome      desktop='^2' follow=on
+bspc rule -a Code            	desktop='^7'
+bspc rule -a Telegram           desktop='^7'
+bspc rule -a discord            desktop='^7'
+bspc rule -a Zathura 		    state=tiled
+bspc rule -a Emacs 		        state=tiled
+bspc rule -a mpv                desktop='^5' state=floating follow=on
+bspc rule -a feh                state=floating follow=on
+bspc rule -a Gpick              state=floating follow=on
+bspc rule -a Tilda              state=floating floating=on focus=on sticky=on
+bspc rule -a kitty              state=floating floating=on focus=on sticky=on border=off
+bspc rule -a Friends List       state=floating floating=on focus=on sticky=on border=off
+bspc rule -a Demo               state=floating floating=on focus=on sticky=on
+bspc rule -a Microbench         desktop='^3' state=floating floating=on focus=on sticky=on
+bspc rule -a ShaderBench        desktop='^3' state=floating floating=on focus=on sticky=on
 
-# bspc monitor eDP1 -d TERM WEB CODE FILES MEDIA EXTRA COMMUNI READ
-bspc monitor eDP1 -d TERM WEB CODE MEDIA FILES
+bspc monitor eDP-1 -d TERM WEB CODE MEDIA FILES
 
 # wmname LG3D
