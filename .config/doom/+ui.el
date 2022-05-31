@@ -19,7 +19,7 @@
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "Fantasque Sans Mono" :size 22 :weight 'semi-light)
 (setq doom-font (font-spec :family "Fantasque Sans Mono Nerd Font" :size 22 :weight 'normal)
-      doom-variable-pitch-font (font-spec :family "arial" :size 19))
+      doom-variable-pitch-font (font-spec :family "sans" :size 19))
 ;; Set font for chinese characters
 ;; Font should be twice the width of asci chars so that org tables align
 ;; This will break if run in terminal mode, so use conditional to only run for GUI.

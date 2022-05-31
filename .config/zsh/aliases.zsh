@@ -43,3 +43,4 @@ alias egrep='egrep --color=auto'
 alias lynx='lynx -vikeys -accept_all_cookies'
 
 alias trans_cn='trans -t zh'
+alias ls='lsd'

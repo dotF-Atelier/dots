@@ -15,8 +15,9 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 source $ZDOTDIR/aliases.zsh
 
 # prompt
-PROMPT='%(?.%F{green} .%F{red} )%f %B%F{240}%1~%f%b -> '
+PROMPT="%(?.%F{white} .%F{red} )%f %B%F{240}%1~%f%b "
 RPROMPT='%(?.%F .%F{red} %?)'
+
 
 # auto completion
 autoload -U compinit&& compinit
@@ -24,7 +25,6 @@ _comp_options+=(globdots) # With hidden files
 source $ZDOTDIR/plugin/completion.zsh
 
 bindkey -e
-# source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
 my-backward-delete-word() {
@@ -35,3 +35,12 @@ my-backward-delete-word() {
 zle -N my-backward-delete-word
 bindkey '^W' my-backward-delete-word
 source $ZDOTDIR/plugin/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+function precmd() {
+    # Print a newline before the prompt, unless it's the first prompt in the process.
+    if [ -z "$NEW_LINE_BEFORE_PROMPT" ]; then
+        NEW_LINE_BEFORE_PROMPT=1
+    elif [ "$NEW_LINE_BEFORE_PROMPT" -eq 1 ]; then
+        echo
+    fi
+}
