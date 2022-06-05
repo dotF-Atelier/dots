@@ -5837,7 +5837,7 @@ if [ "$1" == "test" ];then
 		fi
 
 		if [ "$new_clip" != "$old_clip" ];then
-			translate "$new_clip"
+
 			sleep 2
 		fi
 		sleep 1.5
