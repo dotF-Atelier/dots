@@ -1,0 +1,3 @@
+[submodule ".myprofile/startpages"]
+	path = .myprofile/startpages
+	url = https://github.com/K1ngst0m/startpages

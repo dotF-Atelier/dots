@@ -64,19 +64,6 @@
 
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
-;; eglot
-;; (set-eglot-client! 'cc-mode '("-j=16"
-;;                                 "--all-scopes-completion"
-;;                                 "--clang-tidy"
-;;                                 "--enable-config"
-;;                                 "--background-index"
-;;                                 "--completion-style=bundled"
-;;                                 "--pch-storage=memory"
-;;                                 "--header-insertion=never"
-;;                                 "--log=verbose"
-;;                                 "--header-insertion-decorators=0"
-;;                                 "--clang-tidy-checks='-*,clang-analyzer-*,readability-*,modernize-*,-clang-analyzer-osx*,-readability-identifier-length,-readability-braces-around-statements'"))
-
 ;; projectile
 ;; prevent load project from home directory
 (after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
