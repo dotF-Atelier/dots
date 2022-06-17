@@ -1,8 +1,8 @@
 CompileFlags:
-  Add: [-xc++, -Wall, -Wno-unused-variable]
+  Add: [-Wall, -Wno-unused-variable]
   # Remove extra warnings specified in compile commands.
   # Single value is also acceptable, same as "Remove: [-mabi]"
-  Compiler: g++
+  Compiler: gcc
   Remove: [-fvar-tracking,-fvar-tracking-assignments]
 Diagnostics:
   # Tweak Clang-Tidy checks.

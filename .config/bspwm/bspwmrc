@@ -36,6 +36,7 @@ bspc rule -a Friends List       state=floating floating=on focus=on sticky=on bo
 bspc rule -a Demo               state=floating floating=on focus=on sticky=on
 bspc rule -a Microbench         desktop='^3' state=floating floating=on focus=on sticky=on
 bspc rule -a ShaderBench        desktop='^3' state=floating floating=on focus=on sticky=on
+bspc rule -a icalingua          state=floating floating=on focus=on sticky=on
 
 bspc monitor eDP-1 -d TERM WEB CODE MEDIA FILES
 

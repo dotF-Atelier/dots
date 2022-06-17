@@ -67,7 +67,7 @@ super + b
 # translate select text
 alt + w
 # super + ctrl + Tab
-	proxychains -q translator "`xclip -o`"
+	translator "`xclip -o`"
 
 #
 # state/flags
