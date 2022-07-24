@@ -21,7 +21,7 @@ XF86AudioMute
     pactl set-sink-mute 0 toggle
 
 alt + q
-    tdrop -am -w 1100 -h 550 -x 800 -y 520 kitty
+    tdrop -am -w 1300 -h 550 -x 600 -y 520 kitty
 
 # screenshot keybindings
 ctrl + alt + a
@@ -112,10 +112,14 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-8}
-	bspc {desktop -f,node -d} '^{1-8}'
-# super + ctrl + {_,shift + }{1-4}
+# super + {_,shift + }{1-8}
+# 	bspc {desktop -f,node -d} '^{1-8}'
+super + {_,shift + }{1-4}
+	bspc {desktop -f,node -d} '^{5-8}'
+# super + {_,shift + }{5-8}
 # 	bspc {desktop -f,node -d} '^{1-4}'
+super + ctrl + {_,shift + }{1-4}
+	bspc {desktop -f,node -d} '^{1-4}'
 
 # dunst
 super + shift + x
