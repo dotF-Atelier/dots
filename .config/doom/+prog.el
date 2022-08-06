@@ -10,6 +10,24 @@
 
 (after! realgud (advice-remove #'realgud:terminate #'+debugger--cleanup-after-realgud-a))
 
+(defvar gud-overlay
+  (let* ((ov (make-overlay (point-min) (point-min))))
+    (overlay-put ov 'face '(:background "#2D2F37")) ;; colors for Leuven theme
+    ov)
+  "Overlay variable for GUD highlighting.")
+(defadvice gud-display-line (after my-gud-highlight act)
+ "Highlight current line."
+ (let* ((ov gud-overlay)
+        (bf (gud-find-file true-file)))
+   (save-excursion
+     (with-selected-window (get-buffer-window bf)
+       (save-restriction
+         (goto-line (ad-get-arg 1))
+         (recenter)))
+     (set-buffer bf)
+     (move-overlay ov (line-beginning-position) (line-end-position)
+                   (current-buffer)))))
+
 (add-to-list 'auto-mode-alist '("\\.inl\\'" . +cc-c-c++-objc-mode))
 (add-to-list 'auto-mode-alist '("\\.inc\\'" . +cc-c-c++-objc-mode))
 
@@ -64,32 +82,10 @@
 
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
-;; eglot
-;; (set-eglot-client! 'cc-mode '("-j=16"
-;;                                 "--all-scopes-completion"
-;;                                 "--clang-tidy"
-;;                                 "--enable-config"
-;;                                 "--background-index"
-;;                                 "--completion-style=bundled"
-;;                                 "--pch-storage=memory"
-;;                                 "--header-insertion=never"
-;;                                 "--log=verbose"
-;;                                 "--header-insertion-decorators=0"
-;;                                 "--clang-tidy-checks='-*,clang-analyzer-*,readability-*,modernize-*,-clang-analyzer-osx*,-readability-identifier-length,-readability-braces-around-statements'"))
+(add-hook 'prog-mode-hook #'yas-minor-mode)
 
 ;; projectile
 ;; prevent load project from home directory
-(after! projectile (setq projectile-project-root-files-bottom-up (remove ".git" projectile-project-root-files-bottom-up)))
-(add-hook 'prog-mode-hook #'yas-minor-mode)
-(setq projectile-project-root-functions '(projectile-root-local
-                                          projectile-root-top-down
-                                          projectile-root-top-down-recurring
-                                          projectile-root-bottom-up))
-(after! projectile
-  (nconc projectile-globally-ignored-directories
-         '(".stack-work" "node_modules" ".local" "3rdparty")))
-
-(setq vterm-module-cmake-args "-DUSE_SYSTEM_LIBVTERM=yes")
 
 (c-set-offset 'inline-open '0)
 (defun vlad-cc-style()
