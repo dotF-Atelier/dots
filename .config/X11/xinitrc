@@ -3,8 +3,17 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-eval "$(dbus-launch --sh-syntax --exit-with-session)"
+unset XDG_RUNTIME_DIR
+export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
+
+if command -v dbus-launch >/dev/null && test -z "${DBUS_SESSION_BUS_ADDRESS}"; then
+       eval $(dbus-launch --sh-syntax --exit-with-session)
+fi
+
+# Ensure XDG_RUNTIME_DIR is set
+unset XDG_RUNTIME_DIR
+export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
+
 [[ -f $MYXPATH/Xresources ]] && xrdb -merge $MYXPATH/Xresources
-# [[ -f $MYXPATH/Xresources ]] && xmodmap $MYXPATH/Xmodmap
 sxhkd&
 exec bspwm

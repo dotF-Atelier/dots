@@ -1,5 +1,5 @@
 CompileFlags:
-  Add: [-xc++, -Wall, -Wno-unused-variable]
+  Add: [-std=c++17, -Wall, -Wno-unused-variable]
   # Remove extra warnings specified in compile commands.
   # Single value is also acceptable, same as "Remove: [-mabi]"
   Compiler: g++
