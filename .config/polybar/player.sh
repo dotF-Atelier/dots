@@ -4,7 +4,7 @@
 mpd_status=`mpc status`
 
 if [[ $mpd_status == *"[playing]"* ]]; then
-    echo -n $(echo -n $(mpc volume) | sed s/volume://) '| ' 
+    # echo -n $(echo -n $(mpc volume) | sed s/volume://) '| ' 
     echo `mpc current`
     exit
 fi

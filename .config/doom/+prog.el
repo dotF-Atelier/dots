@@ -85,7 +85,10 @@
 (add-hook 'prog-mode-hook #'yas-minor-mode)
 
 ;; projectile
-;; prevent load project from home directory
+;; control project root additional guess (besides ".git", ".projectile")
+(setq projectile-project-root-files
+'("CMakeLists.txt" "Makefile" "configure.ac" "configure.in" "TAGS" "GTAGS"))
+(setq projectile-ignored-projects '("~/"))
 
 (c-set-offset 'inline-open '0)
 (defun vlad-cc-style()

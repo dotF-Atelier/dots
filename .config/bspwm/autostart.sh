@@ -10,7 +10,7 @@ xset fp rehash
 xsetroot -cursor_name left_ptr&
 /usr/bin/setxkbmap -option "ctrl:nocaps"
 
-xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144.00 --output HDMI-A-0 --mode 1920x1080 --rate 60.00 --left-of DisplayPort-0
+xrandr --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate left --output DisplayPort-0 --mode 1920x1080 --pos 1080x337 --rotate normal --output DisplayPort-1 --off
 
 feh --bg-fill $HOME/Picture/wallpaper/sandworm.jpg --bg-fill $HOME/Picture/wallpaper/sandworm.jpg
 

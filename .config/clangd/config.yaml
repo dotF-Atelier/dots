@@ -17,8 +17,12 @@ Diagnostics:
       readability-isolate-declaration,
       modernize-use-trailing-return-type,
       modernize-use-nodiscard,
+      modernize-use-using,
+      modernize-use-auto,
       readability-redundant-access-specifiers,
       readability-function-cognitive-complexity,
       readability-magic-numbers,
       readability-uppercase-literal-suffix,
+      readability-qualified-auto,
+      readability-convert-member-functions-to-static
     ]

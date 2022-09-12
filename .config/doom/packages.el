@@ -8,17 +8,6 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
                                         ;(package! some-package)
-(package! helm-bibtex)
-(package! org-ref)
-(package! org-roam-bibtex)
-(package! org-roam-ui)
-(package! pdf-tools
-  :recipe (:host github :repo "vedang/pdf-tools"))
-(package! nerd-fonts
-  :recipe (:host github :repo "twlz0ne/nerd-fonts.el"))
-(package! all-the-icons-nerd-fonts
-  :recipe (:host github :repo "mohkale/all-the-icons-nerd-fonts"))
-
 ;(package! this-package
 ;  :recipe (:host github :repo "username/repo"
 ;           :files ("some-file.el" "src/lisp/*.el")))
