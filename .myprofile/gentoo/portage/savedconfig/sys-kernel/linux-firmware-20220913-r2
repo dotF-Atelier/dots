@@ -46,9 +46,11 @@ amdgpu/vangogh_vcn.bin
 amdgpu/mullins_sdma.bin
 amdgpu/polaris10_mec.bin
 amdgpu/hawaii_pfp.bin
+amdgpu/gc_10_3_6_mec2.bin
 amdgpu/green_sardine_me.bin
 amdgpu/polaris10_pfp_2.bin
 amdgpu/polaris12_k_smc.bin
+amdgpu/gc_10_3_6_ce.bin
 amdgpu/navi14_sdma1.bin
 amdgpu/sienna_cichlid_me.bin
 amdgpu/oland_ce.bin
@@ -129,6 +131,7 @@ amdgpu/yellow_carp_me.bin
 amdgpu/tonga_ce.bin
 amdgpu/tahiti_me.bin
 amdgpu/hawaii_sdma1.bin
+amdgpu/gc_10_3_6_mec.bin
 amdgpu/polaris11_sdma1.bin
 amdgpu/tonga_me.bin
 amdgpu/sienna_cichlid_vcn.bin
@@ -176,20 +179,24 @@ amdgpu/fiji_mec2.bin
 amdgpu/navi10_rlc.bin
 amdgpu/sienna_cichlid_smc.bin
 amdgpu/mullins_uvd.bin
+amdgpu/psp_13_0_5_ta.bin
 amdgpu/beige_goby_mec2.bin
 amdgpu/polaris10_vce.bin
 amdgpu/cyan_skillfish2_sdma.bin
 amdgpu/vega20_mec.bin
 amdgpu/dimgrey_cavefish_mec2.bin
 amdgpu/vegam_uvd.bin
+amdgpu/gc_10_3_6_rlc.bin
 amdgpu/navy_flounder_sdma.bin
 amdgpu/pitcairn_smc.bin
 amdgpu/carrizo_pfp.bin
 amdgpu/kaveri_me.bin
+amdgpu/gc_10_3_6_pfp.bin
 amdgpu/dimgrey_cavefish_me.bin
 amdgpu/navy_flounder_sos.bin
 amdgpu/renoir_me.bin
 amdgpu/polaris10_mec2_2.bin
+amdgpu/gc_10_3_6_me.bin
 amdgpu/navi14_pfp_wks.bin
 amdgpu/pitcairn_rlc.bin
 amdgpu/raven2_asd.bin
@@ -251,6 +258,7 @@ amdgpu/topaz_k_smc.bin
 amdgpu/banks_k_2_smc.bin
 amdgpu/vegam_smc.bin
 amdgpu/polaris12_mc.bin
+amdgpu/vcn_3_1_2.bin
 amdgpu/picasso_mec2.bin
 amdgpu/tonga_mec2.bin
 amdgpu/navi14_mec.bin
@@ -356,6 +364,7 @@ amdgpu/cyan_skillfish2_mec2.bin
 amdgpu/navi12_vcn.bin
 amdgpu/raven2_ta.bin
 amdgpu/aldebaran_mec2.bin
+amdgpu/psp_13_0_5_asd.bin
 amdgpu/bonaire_sdma1.bin
 amdgpu/aldebaran_ta.bin
 amdgpu/fiji_mec.bin
@@ -381,6 +390,7 @@ amdgpu/oland_uvd.bin
 amdgpu/polaris10_sdma1.bin
 amdgpu/navi10_sdma.bin
 amdgpu/navi12_rlc.bin
+amdgpu/dcn_3_1_5_dmcub.bin
 amdgpu/picasso_pfp.bin
 amdgpu/hawaii_sdma.bin
 amdgpu/vega10_me.bin
@@ -403,6 +413,7 @@ amdgpu/beige_goby_smc.bin
 amdgpu/vangogh_dmcub.bin
 amdgpu/arcturus_sdma.bin
 amdgpu/sienna_cichlid_mec.bin
+amdgpu/sdma_5_2_6.bin
 amdgpu/dimgrey_cavefish_sos.bin
 amdgpu/picasso_rlc_am4.bin
 amdgpu/renoir_mec.bin
@@ -479,6 +490,7 @@ amdgpu/vangogh_me.bin
 amdgpu/psp_13_0_8_ta.bin
 amdgpu/aldebaran_sdma.bin
 amdgpu/dimgrey_cavefish_dmcub.bin
+amdgpu/psp_13_0_5_toc.bin
 amdgpu/polaris12_sdma1.bin
 amdgpu/navi10_sos.bin
 amdgpu/tonga_uvd.bin
@@ -1445,6 +1457,7 @@ mellanox/mlxsw_spectrum-13.2008.2406.mfa2
 mellanox/mlxsw_spectrum-13.2008.1312.mfa2
 mellanox/mlxsw_spectrum-13.2008.3326.mfa2
 mellanox/mlxsw_spectrum3-30.2008.1036.mfa2
+mellanox/mlxsw_spectrum-13.2010.3146.mfa2
 mellanox/mlxsw_spectrum2-29.2008.2018.mfa2
 mellanox/mlxsw_spectrum-13.1620.192.mfa2
 mellanox/mlxsw_spectrum-13.1702.6.mfa2
@@ -1456,6 +1469,7 @@ mellanox/mlxsw_spectrum-13.1910.622.mfa2
 mellanox/mlxsw_spectrum2-29.2008.2406.mfa2
 mellanox/mlxsw_spectrum-13.2008.2946.mfa2
 mellanox/mlxsw_spectrum2-29.2008.2304.mfa2
+mellanox/mlxsw_spectrum2-29.2010.3146.mfa2
 mellanox/mlxsw_spectrum2-29.2010.1232.mfa2
 mellanox/mlxsw_spectrum3-30.2010.1502.mfa2
 mellanox/mlxsw_spectrum-13.2007.1168.mfa2
@@ -1471,6 +1485,7 @@ mellanox/mlxsw_spectrum2-29.2010.1006.mfa2
 mellanox/lc_ini_bundle_2010_3020.bin
 mellanox/mlxsw_spectrum-13.1703.4.mfa2
 mellanox/lc_ini_bundle_2010_1006.bin
+mellanox/lc_ini_bundle_2010_3146.bin
 mellanox/lc_ini_bundle_2010_1502.bin
 mellanox/mlxsw_spectrum-13.2008.2438.mfa2
 mellanox/mlxsw_spectrum-13.2010.1232.mfa2
@@ -1478,6 +1493,7 @@ mellanox/mlxsw_spectrum2-29.2007.1168.mfa2
 mellanox/mlxsw_spectrum-13.1420.122.mfa2
 mellanox/mlxsw_spectrum3-30.2010.3020.mfa2
 mellanox/mlxsw_spectrum2-29.2010.1502.mfa2
+mellanox/mlxsw_spectrum3-30.2010.3146.mfa2
 mellanox/mlxsw_spectrum2-29.2010.1406.mfa2
 mellanox/mlxsw_spectrum2-29.2008.3326.mfa2
 mellanox/mlxsw_spectrum-13.2008.2304.mfa2
@@ -2125,6 +2141,14 @@ qca/msbtfw11.mbn
 qca/nvm_usb_00000302.bin
 qca/crbtfw32.tlv
 qca/nvm_usb_00000302_eu.bin
+qcom/sc8280xp/LENOVO/21BX/battmgr.jsn
+qcom/sc8280xp/LENOVO/21BX/adspua.jsn
+qcom/sc8280xp/LENOVO/21BX/adspr.jsn
+qcom/sc8280xp/LENOVO/21BX/cdspr.jsn
+qcom/sc8280xp/LENOVO/21BX/qcdxkmsuc8280.mbn
+qcom/sc8280xp/LENOVO/21BX/qcslpi8280.mbn
+qcom/sc8280xp/LENOVO/21BX/qccdsp8280.mbn
+qcom/sc8280xp/LENOVO/21BX/qcadsp8280.mbn
 qcom/leia_pm4_470.fw
 qcom/venus-5.2/venus.b02
 qcom/venus-5.2/venus.mbn
@@ -2199,14 +2223,7 @@ qcom/venus-5.4/venus.b04
 qcom/a530_zap.mdt
 qcom/a530_pfp.fw
 qcom/a630_sqe.fw
-qcom/LENOVO/21BX/battmgr.jsn
-qcom/LENOVO/21BX/adspua.jsn
-qcom/LENOVO/21BX/adspr.jsn
-qcom/LENOVO/21BX/cdspr.jsn
-qcom/LENOVO/21BX/qcdxkmsuc8280.mbn
-qcom/LENOVO/21BX/qcslpi8280.mbn
-qcom/LENOVO/21BX/qccdsp8280.mbn
-qcom/LENOVO/21BX/qcadsp8280.mbn
+qcom/LENOVO/21BX
 qcom/a420_pfp.fw
 qcom/vpu-1.0/venus.b02
 qcom/vpu-1.0/venus.mbn

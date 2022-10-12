@@ -165,3 +165,6 @@ Zotero/
 .sesi_licenses.pref
 debug.pdf
 note
+.RadeonGPUProfiler/
+.RadeonMemoryVisualizer/
+.rga/

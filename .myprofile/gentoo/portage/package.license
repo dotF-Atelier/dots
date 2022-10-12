@@ -33,3 +33,5 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 >=games-server/steamcmd-1.0-r4 Steam
 # required by media-fonts/corefonts (argument)
 >=media-fonts/corefonts-1-r7 MSttfEULA
+# required by amdgpu-pro-vulkan (argument)
+>=media-libs/amdgpu-pro-vulkan-22.20.0.1438747 AMD-GPU-PRO-EULA
