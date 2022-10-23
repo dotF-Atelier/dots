@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: my-article-acronyms
-# key: my-article-acronyms
-# --
-\newacronym{${acronym_lowercase}}{${acronym_uppercase}}{${acronym_description}}

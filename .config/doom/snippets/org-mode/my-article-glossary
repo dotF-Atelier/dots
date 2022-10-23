@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: my-article-glossary
-# key: my-my-article-glossary
-# --
-\newglossaryentry{${gls}}{
-name={${gls_name}},
-symbol={${gls_symbol}}},
-description={${gls_description}}
-}

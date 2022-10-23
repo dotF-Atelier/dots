@@ -1,3 +1,6 @@
-[submodule ".myprofile/startpages"]
-	path = .myprofile/startpages
-	url = git@github.com:k1ngst0m/startpages.git
+[submodule ".myprofile"]
+	path = .myprofile
+	url = https://github.com/dotF-Atelier/dot-profile
+[submodule ".config"]
+	path = .config
+	url = git@github.com:dotF-Atelier/dot-cfg.git

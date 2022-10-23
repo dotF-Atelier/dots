@@ -1,4 +1,0 @@
-#!/bin/bash
-killall clash
-clash -f ~/.config/clash/config.yaml &> /dev/null&
-disown

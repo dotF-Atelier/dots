@@ -1,5 +1,0 @@
-cross-aarch64-linux-gnu/binutils cross-aarch64-linux-gnu/binutils.conf
-cross-aarch64-linux-gnu/gcc cross-aarch64-linux-gnu/gcc.conf
-cross-aarch64-linux-gnu/linux-headers cross-aarch64-linux-gnu/linux-headers.conf
-cross-aarch64-linux-gnu/glibc cross-aarch64-linux-gnu/glibc.conf
-cross-aarch64-linux-gnu/gdb cross-aarch64-linux-gnu/gdb.conf

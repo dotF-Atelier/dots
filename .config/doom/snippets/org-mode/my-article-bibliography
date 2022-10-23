@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: my-article-bibliography
-# key: my-article-bibliography
-# --
-#+BEGIN_EXPORT latex
-\bibliographystyle{unsrt}
-\bibliography{paper}
-#+END_EXPORT
